@@ -1,0 +1,23 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: Slope
+links:
+  -
+    name: Root
+    joint_type: fixed
+    center_of_mass: [ 0, 0, 0 ]
+    mass: 1
+    inertia: [ 0.4575, 0, 0, 0, 0.375, 0, 0, 0, 0.4575 ]
+    elements:
+      -
+        type: Shape
+        geometry:
+          type: Extrusion
+          cross_section: [
+            -0.75, -0.75,
+            0.75, -0.75,
+            0.75, 0.75,
+            -0.75, -0.75 ]
+          spine: [ 0, -0.9, 0, 0, 0.9, 0 ]
+        appearance: { material: { diffuse: [ 0.5, 0.5, 0.5 ] } }

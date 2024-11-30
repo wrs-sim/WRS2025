@@ -1,0 +1,37 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: CollapsedPanel
+
+links:
+  -
+    name: Floor
+    translation: [ 0, 0, -0.1 ]
+    jointType: fixed
+    material: Ground
+    AMOR: true
+#    elements:
+#      -
+#        type: Shape
+#        geometry: { type: Box, size: [ 10.0, 10.0, 0.2 ] }
+#        appearance: { material: { diffuseColor: [ 0.5, 0.5, 0 ] } }
+  - &panel
+    type: SubBody
+    uri: "misc/control_panel_a.body"
+    parent: Floor
+    prefix: SB01_
+    translation: [ 4.0, -5.0, 1.1 ]
+    rotation: [ 0, 0, 1, 90 ]
+    jointType: fixed
+  - { <<: *panel, uri: "misc/control_panel_a.body", prefix:  SB2_, translation: [ -1.0, -5.0, 1.1 ], rotation: [ [ 0, 0, 1, 90 ], [ 0, 1, 0,  0 ] ] }
+  - { <<: *panel, uri: "misc/control_panel_b.body", prefix:  SB3_, translation: [ -3.0, -5.0, 1.1 ], rotation: [ [ 0, 0, 1, 90 ], [ 0, 1, 0,  0 ] ] }
+  - { <<: *panel, uri: "misc/control_panel_b.body", prefix:  SB4_, translation: [ -4.0, -3.0, 0.8 ], rotation: [ [ 0, 0, 1, 90 ], [ 0, 1, 0, 80 ] ] }
+  - { <<: *panel, uri: "misc/control_panel_b.body", prefix:  SB5_, translation: [  1.5,  4.0, 0.8 ], rotation: [ 0, 1, 0,   80 ] }
+  - { <<: *panel, uri: "misc/control_panel_b.body", prefix:  SB6_, translation: [  0.0,  3.0, 1.1 ], rotation: [ 1, 0, 0,   45 ] }
+  - { <<: *panel, uri: "misc/control_panel_a.body", prefix:  SB7_, translation: [ -0.5,  2.5, 0.6 ], rotation: [ 0, 0, 1,  -60 ] }
+  - { <<: *panel, uri: "misc/control_panel_a.body", prefix:  SB8_, translation: [ -1.5,  1.5, 0.6 ], rotation: [ 0, 0, 1,   30 ] }
+  - { <<: *panel, uri: "misc/control_panel_a.body", prefix:  SB9_, translation: [ -2.5,  0.5, 0.6 ], rotation: [ 0, 0, 1,  -45 ] }
+  - { <<: *panel, uri: "misc/control_panel_b.body", prefix: SB10_, translation: [ -3.0,  0.0, 1.1 ], rotation: [ 0, 0, 1, -120 ] }
+  - { <<: *panel, uri: "misc/control_panel_b.body", prefix: SB11_, translation: [ -4.0, -1.0, 1.1 ], rotation: [ 0, 0, 1,  -90 ] }
+  - { <<: *panel, uri: "misc/control_panel_a.body", prefix: SB12_, translation: [  5.0, -3.0, 0.6 ], rotation: [ 0, 0, 1,  180 ] }
+  - { <<: *panel, uri: "misc/control_panel_a.body", prefix: SB13_, translation: [  4.5, -2.0, 0.6 ], rotation: [ 0, 0, 1,  135 ] }

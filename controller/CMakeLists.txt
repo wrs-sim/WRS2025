@@ -1,0 +1,6 @@
+choreonoid_add_simple_controller(MonoCrawlerJoystickController MonoCrawlerJoystickController.cpp)
+
+choreonoid_add_simple_controller(LeakedLineController LeakedLineController.cpp)
+target_link_libraries(LeakedLineController CnoidSceneEffectsPlugin)
+
+choreonoid_add_simple_controller(StorageController StorageController.cpp)

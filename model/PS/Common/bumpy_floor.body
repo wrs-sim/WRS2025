@@ -1,0 +1,70 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+name: BumpyFloor
+links:
+  -
+    name: Floor
+    translation: [ 0, 0, -0.1 ]
+    jointType: fixed
+    material: Ground
+    AMOR: true
+#    elements:
+#      -
+#        type: Shape
+#        geometry: { type: Box, size: [ 10.0, 10.0, 0.2 ] }
+#        appearance: { material: { diffuseColor: [ 0.5, 0.5, 0 ] } }
+  - &debris
+    type: SubBody
+    uri: "misc/debris.body"
+    parent: Floor
+    prefix: SB01_
+    translation: [ 4.0, -4.0, 0.15 ]
+    joint_type: fixed
+#  - { <<: *debris, prefix: SB02_, translation: [  4.0, -2.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+#  - { <<: *debris, prefix: SB03_, translation: [  4.0,  0.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+#  - { <<: *debris, prefix: SB04_, translation: [  4.0,  2.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+#  - { <<: *debris, prefix: SB05_, translation: [  4.0,  4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+
+  - { <<: *debris, prefix: SB06_, translation: [  3.0, -3.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB07_, translation: [  3.0, -1.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+#  - { <<: *debris, prefix: SB08_, translation: [  3.0,  1.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB09_, translation: [  3.0,  3.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+
+#  - { <<: *debris, prefix: SB10_, translation: [  2.0, -4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB11_, translation: [  2.0, -2.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+  - { <<: *debris, prefix: SB12_, translation: [  2.0,  0.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB13_, translation: [  2.0,  2.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+  - { <<: *debris, prefix: SB14_, translation: [  2.0,  4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+
+  - { <<: *debris, prefix: SB15_, translation: [  1.0, -3.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+#  - { <<: *debris, prefix: SB16_, translation: [  1.0, -1.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+  - { <<: *debris, prefix: SB17_, translation: [  1.0,  1.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB18_, translation: [  1.0,  3.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+
+#  - { <<: *debris, prefix: SB19_, translation: [  0.0, -4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB20_, translation: [  0.0, -2.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+  - { <<: *debris, prefix: SB21_, translation: [  0.0,  0.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+#  - { <<: *debris, prefix: SB22_, translation: [  0.0,  2.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+#  - { <<: *debris, prefix: SB23_, translation: [  0.0,  4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+
+#  - { <<: *debris, prefix: SB24_, translation: [ -1.0, -3.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+#  - { <<: *debris, prefix: SB25_, translation: [ -1.0, -1.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+  - { <<: *debris, prefix: SB26_, translation: [ -1.0,  1.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB27_, translation: [ -1.0,  3.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+
+#  - { <<: *debris, prefix: SB28_, translation: [ -2.0, -4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB29_, translation: [ -2.0, -2.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+  - { <<: *debris, prefix: SB30_, translation: [ -2.0,  0.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB31_, translation: [ -2.0,  2.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+  - { <<: *debris, prefix: SB32_, translation: [ -2.0,  4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+
+  - { <<: *debris, prefix: SB33_, translation: [ -3.0, -3.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+#  - { <<: *debris, prefix: SB34_, translation: [ -3.0, -1.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+#  - { <<: *debris, prefix: SB35_, translation: [ -3.0,  1.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB36_, translation: [ -3.0,  3.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+
+  - { <<: *debris, prefix: SB37_, translation: [ -4.0, -4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+#  - { <<: *debris, prefix: SB38_, translation: [ -4.0, -2.0, 0.15 ], rotation: [ 0, 0, 1, 45 ] }
+#  - { <<: *debris, prefix: SB39_, translation: [ -4.0,  0.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
+  - { <<: *debris, prefix: SB40_, translation: [ -4.0,  2.0, 0.15 ], rotation: [ 0, 0, 1, 90 ] }
+#  - { <<: *debris, prefix: SB41_, translation: [ -4.0,  4.0, 0.15 ], rotation: [ 0, 0, 1,  0 ] }
