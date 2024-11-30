@@ -1,0 +1,86 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: catwalk
+
+CATWALK_TEXTURE_FILE: &CATWALK_TEXTURE_FILE "resource/MetalSteelTexturedWhite.jpg"
+
+links:
+  -
+    name: Root
+    joint_type: fixed
+  -
+    name: Catwalk
+    parent: Root
+    material: Ground
+    elements:
+      -
+        type: Shape
+        geometry: { type: Box, size: [ 10.0, 1.8, 0.02 ] }
+        translation: [0, 4.1, -0.02]
+        #appearance: { material: { diffuseColor: [ 0, 0, 1 ] } }
+        appearance: &CATWALK_APP
+          texture:
+            url: *CATWALK_TEXTURE_FILE
+            repeatS: true
+            repeatT: true
+          textureTransform:
+            scale: [ 21, 3 ]
+            #scale: [ 14, 2 ]
+            #scale: [ 7, 1 ]
+      -
+        type: Shape
+        geometry: { type: Box, size: [ 10.0, 1.8, 0.02 ] }
+        appearance: { material: { diffuseColor: [ 0, 0, 1 ] } }
+        translation: [0, -4.1, -0.02]
+        appearance: *CATWALK_APP
+      -
+        type: Shape
+        geometry: { type: Box, size: [ 6.4, 1.8, 0.02 ] }
+        appearance: { material: { diffuseColor: [ 0, 0, 1 ] } }
+        rotation: [0,0,1,90]
+        translation: [4.1, 0, -0.02]
+        appearance: *CATWALK_APP
+      -
+        type: Shape
+        geometry: { type: Box, size: [ 6.4, 1.8, 0.02 ] }
+        appearance: { material: { diffuseColor: [ 0, 0, 1 ] } }
+        rotation: [0,0,1,90]
+        translation: [ -4.1, 0, -0.02]
+        appearance: *CATWALK_APP
+
+#        type: Visual
+#        elements:
+#          -
+#            type: Shape
+#            geometry:
+
+#  - &fence
+#    type: SubBody
+#    uri: "fence.body"
+#    parent: Root
+#    prefix: SB1_
+#    translation: [ 1.5, -0.8, 0 ]
+#    joint_type: fixed
+#  - <<: *fence
+#    prefix: SB2_
+#    translation: [ 0.5, -0.8, 0 ]
+#  - <<: *fence
+#    prefix: SB3_
+#    translation: [ -0.5, -0.8, 0 ]
+#  - <<: *fence
+#    prefix: SB4_
+#    translation: [ -1.5, -0.8, 0 ]
+#  - <<: *fence
+#    prefix: SB5_
+#    translation: [ 1.8, 0.8, 0 ]
+#  - <<: *fence
+#    prefix: SB6_
+#    translation: [ 0.6, 0.8, 0 ]
+#  - <<: *fence
+#    prefix: SB7_
+#    translation: [ -0.6, 0.8, 0 ]
+#  - <<: *fence
+#    prefix: SB8_
+#    translation: [ -1.8, 0.8, 0 ]
+

@@ -1,0 +1,42 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+angleUnit: degree
+name: PullOutBaseB
+
+RING: &RING
+  type: Transform
+  scale: [ 0.5, 0.5, 0.5 ]
+  elements:
+    -
+      type: Shape
+      geometry: { type: Box, size: [ 1, 0.5, 0.22375 ] }
+      translation: [ 0, 0, 0.138125 ]
+    -
+      type: Shape
+      geometry: { type: Box, size: [ 1, 0.22375, 0.0525 ] }
+      translation: [ 0, 0.138125, 0 ]
+    -
+      type: Shape
+      geometry: { type: Box, size: [ 1, 0.22375, 0.0525 ] }
+      translation: [ 0, -0.138125, 0 ]
+    -
+      type: Shape
+      geometry: { type: Box, size: [ 1, 0.5, 0.22375 ] }
+      translation: [ 0, 0, -0.138125 ]
+
+links:
+  -
+    name: Base
+    jointType: fixed
+    elements: *RING
+  -
+    name: Block
+    parent: Base
+    jointType: fixed
+    translation: [ 0.3, 0, 0 ]
+    elements:
+      -
+        type: Shape
+        geometry: { type: Box, size: [ 0.25, 0.25, 0.25 ] }
+        translation: [ 0, 0, 0 ]
+
