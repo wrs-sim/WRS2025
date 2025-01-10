@@ -4,7 +4,7 @@
 The competition at the tournament is set up with the scenario of “Information gathering and emergency response in a harsh environment, assuming a plant disaster".
 
 ## 2024 Pre-tournament
-- Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
+- 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
 
 - Sample movie (Click on the image to view simulation on youtube)
   - Overview of the entire area
