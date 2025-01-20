@@ -7,6 +7,15 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We are going to upload a simplified course that will allow you to perform each task in the future.
 
+### Ramp
+<img width="50%" src="./fig/ramp.png">
+- The robot needs to go up and down the ramp.<br>
+- The robot needs to cross the ramp.
+
+### Catwalk
+<img width="50%" src="./fig/catwalk.png">
+- The robot needs to pass through the catwalk (narrow aisle).
+
 ### Stairs
 <img width="50%" src="./fig/stairs.png">
 - The robot needs to go up and down the stairs.
