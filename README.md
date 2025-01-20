@@ -9,20 +9,28 @@ The competition at the tournament is set up with the scenario of “Information 
 
 ### Ramp
 <img width="50%" src="./fig/ramp.png">
-- The robot needs to go up and down the ramp.<br>
-- The robot needs to cross the ramp.
+- The UGV needs to go up and down the ramp.<br>
+- The UGV needs to cross the ramp.
 
 ### Catwalk
 <img width="50%" src="./fig/catwalk.png">
-- The robot needs to pass through the catwalk (narrow aisle).
-
-### Stairs
-<img width="50%" src="./fig/stairs.png">
-- The robot needs to go up and down the stairs.
+- The UGV needs to pass through the catwalk (narrow aisle).
 
 ### Duct
 <img width="50%" src="./fig/duct.png">
 - The UAV enters through the duct and inspects the inside of the tank. (If there is air flow, etc., the robot close the valve first.)
+
+### Stairs
+<img width="50%" src="./fig/stairs.png">
+- The UGV needs to go up and down the stairs.
+
+### Meter
+<img width="50%" src="./fig/meter.png">
+- The robot needs to read the value shown on the meter.
+
+### Switch
+<img width="50%" src="./fig/switch.png">
+- The robot needs to press the specified switch.
 
 
 ## 2024 Pre-tournament
