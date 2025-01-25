@@ -43,6 +43,22 @@ The competition at the tournament is set up with the scenario of “Information 
 <img width="33%" src="./fig/door.png">
 - The robot needs to open the door and enter the interior.
 
+### Fire extinguishing work
+#### Step 1:
+<img width="33%" src="./fig/fire1.png">
+- The robot needs to open the fire extinguisher door and extract the hose.
+
+#### Step 2:
+<img width="33%" src="./fig/fire2.png">
+- The robot needs to extract the nozzle and connect the nozzle and hose.
+
+#### Step 3:
+<img width="33%" src="./fig/fire3.png">
+- The robot needs to open the valve inside the fire extinguishing equipment.
+
+#### Step 4:
+<img width="33%" src="./fig/fire4.png">
+- The robot needs to pull the nozzle lever to extinguish the fire.
 
 ## 2024 Pre-tournament
 - 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
