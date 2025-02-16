@@ -28,6 +28,11 @@ The competition at the tournament is set up with the scenario of “Information 
 <img width="33%" src="./fig/meter.png">
 - The robot needs to read the value shown on the meter.
 
+### QR code
+<img width="33%" src="./fig/qr.png">
+- You explore the entire area and search for the QR codes as possible. The QR codes are inside the tubes.
+- The robot needs to read them.
+
 ### Switch
 <img width="33%" src="./fig/switch.png">
 - The robot needs to press the specified switch.
