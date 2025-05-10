@@ -77,6 +77,8 @@ The competition at the tournament is set up with the scenario of “Information 
 
 - The robot needs to pull the nozzle lever to extinguish the fire.
 
+## Simulation Environment
+
 Choreonoid is used as the robot simulator in the World Robot Summit 2025 Simulation Disaster Challenge. Moreover, AGX Dynamics is used as a physics engine.
 
 #### AGX Dynamics installation reference
