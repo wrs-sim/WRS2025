@@ -119,9 +119,12 @@ $ git clone https://github.com/k38-suzuki/hairo-world-plugin.git choreonoid/ext/
 $ cd ~/choreonoid/build
 $ cmake .. -DBUILD_AGX_DYNAMICS_PLUGIN=ON -DBUILD_AGX_BODYEXTENSION_PLUGIN=ON -DBUILD_WRS2018=ON -DBUILD_SCENE_EFFECTS_PLUGIN=ON -DBUILD_HAIRO_WORLD_PLUGIN=ON -DENABLE_INSTALL_RPATH_USE_LINK_PATH=ON
 $ make -j8 # -j8 for 8-core CPU, -jN for N-core CPU
+
+# Run Choreonoid Without ROS2
+$ ./bin/choreonoid
 ```
 
-#### 3. Building Choreonoid for pre-tournament (with ROS2 integration)
+#### 3. Building Choreonoid for WRS2025 (with ROS2 integration)
 1. Install ROS2 (Humble Hawksbill) first.
 ```Bash
 # Add the ROS 2 apt repository
@@ -163,6 +166,28 @@ $ colcon build --symlink-install --cmake-args -DBUILD_AGX_DYNAMICS_PLUGIN=ON -DB
 # Run Choreonoid With ROS2
 $ source install/setup.bash
 $ ros2 run choreonoid_ros choreonoid
+```
+
+## Practice Environment
+Once the above installation is successful, you will be able to set up a practice environment for WRS2025.
+<img width="100%" src="./fig/practice.png">
+
+#### In the case of Choreonoid Without ROS2
+- 1: Building Choreonoid Without ROS2 for the first time
+- 2: Rebuilding Choreonoid Without ROS2 For WRS2025 (Already Choreonoid built)
+```bash
+$ cd ~
+$ cd ~/choreonoid/build
+$ ./bin/choreonoid ../ext/WRS2025/registration/registration_m3.yaml --wrs-util M3
+```
+
+#### In the case of Choreonoid With ROS2
+- 3: Building Choreonoid for WRS2025 (with ROS2 integration)
+```bash
+$ cd ~
+$ cd ~/ros2_ws
+$ source install/setup.bash
+$ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/registration/registration_m3.yaml --wrs-util M3
 ```
 
 ## 2024 Pre-tournament
