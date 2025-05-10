@@ -77,6 +77,93 @@ The competition at the tournament is set up with the scenario of “Information 
 
 - The robot needs to pull the nozzle lever to extinguish the fire.
 
+Choreonoid is used as the robot simulator in the World Robot Summit 2025 Simulation Disaster Challenge. Moreover, AGX Dynamics is used as a physics engine.
+
+#### AGX Dynamics installation reference
+Before constructing the WRS2025 environmental specifications for Choreonoid, please install this software.
+- https://choreonoid.org/ja/documents/latest/agxdynamics/install/install-agx-ubuntu.html
+
+#### How to install Choreonoid
+- Requirements
+	- OS: Ubuntu22.04，CPU: amd64 (Intel CPU, Ryzen CPU)
+	- ROS2: Humble Hawksbill 
+	- Cannot be installed on a virtual environment on an Apple Silicon Mac (because the CPU is arm-based)
+- Building Choreonoid for the competitor's computer 
+	1. Building Choreonoid Without ROS2 for the first time
+	2. Rebuilding Choreonoid Without ROS2 For Pre-competition (Already Choreonoid built)
+	3. Building Choreonoid for pre-tournament (with ROS2 integration)
+
+
+#### 1. Building Choreonoid Without ROS2 for the first time
+```bash
+$ cd
+$ git clone https://github.com/choreonoid/choreonoid.git
+$ git clone https://github.com/wrs-frei-simulation/WRS-Pre-2024.git choreonoid/ext/WRS2024PRE
+$ git clone https://github.com/wrs-frei-simulation/WRS-2025.git choreonoid/ext/WRS2025
+$ git clone https://github.com/k38-suzuki/hairo-world-plugin.git choreonoid/ext/hairo-world-plugin
+$ choreonoid/misc/script/install-requisites-ubuntu-22.04.sh
+$ cd ~/choreonoid && mkdir build && cd build
+$ cmake .. -DBUILD_AGX_DYNAMICS_PLUGIN=ON -DBUILD_AGX_BODYEXTENSION_PLUGIN=ON -DBUILD_WRS2018=ON -DBUILD_SCENE_EFFECTS_PLUGIN=ON -DBUILD_HAIRO_WORLD_PLUGIN=ON -DENABLE_INSTALL_RPATH_USE_LINK_PATH=ON
+$ make -j8 # -j8 for 8-core CPU, -jN for N-core CPU
+
+# Run Choreonoid Without ROS2
+$ ./bin/choreonoid
+```
+
+#### 2. Rebuilding Choreonoid Without ROS2 For WRS2025 (Already Choreonoid built)
+```bash
+$ cd ~
+$ git clone https://github.com/wrs-frei-simulation/WRS-Pre-2024.git choreonoid/ext/WRS2024PRE
+$ git clone https://github.com/wrs-frei-simulation/WRS-2025.git choreonoid/ext/WRS2025
+$ git clone https://github.com/k38-suzuki/hairo-world-plugin.git choreonoid/ext/hairo-world-plugin
+$ cd ~/choreonoid/build
+$ cmake .. -DBUILD_AGX_DYNAMICS_PLUGIN=ON -DBUILD_AGX_BODYEXTENSION_PLUGIN=ON -DBUILD_WRS2018=ON -DBUILD_SCENE_EFFECTS_PLUGIN=ON -DBUILD_HAIRO_WORLD_PLUGIN=ON -DENABLE_INSTALL_RPATH_USE_LINK_PATH=ON
+$ make -j8 # -j8 for 8-core CPU, -jN for N-core CPU
+```
+
+#### 3. Building Choreonoid for pre-tournament (with ROS2 integration)
+1. Install ROS2 (Humble Hawksbill) first.
+```Bash
+# Add the ROS 2 apt repository
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository universe
+$ sudo apt update && sudo apt install curl -y
+$ sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+# Install ROS 2 packages
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install ros-humble-desktop
+$ sudo apt install ros-humble-compressed-image-transport
+$ sudo apt install python3-colcon-common-extensions
+
+# Sourcing the setup script (for bash)
+$ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
+```
+
+2. Install Choreonoid
+```bash
+# Clean-Build Choreonoid With ROS2
+$ mkdir -p ~/ros2_ws/src
+$ cd ~/ros2_ws/src
+$ git clone https://github.com/choreonoid/choreonoid.git
+$ git clone https://github.com/choreonoid/choreonoid_ros.git
+$ git clone https://github.com/choreonoid/choreonoid_ros2_mobile_robot_tutorial.git
+$ git clone https://github.com/wrs-frei-simulation/WRS-Pre-2024.git choreonoid/ext/WRS2024PRE
+$ git clone https://github.com/k38-suzuki/hairo-world-plugin.git choreonoid/ext/hairo-world-plugin
+$ git clone https://github.com/k38-suzuki/choreonoid_ros2_sample_drone_tutorial.git
+$ git clone https://github.com/k38-suzuki/choreonoid_joy2.git
+$ choreonoid/misc/script/install-requisites-ubuntu-22.04.sh
+$ cd ~/ros2_ws
+$ colcon build --symlink-install --cmake-args -DBUILD_AGX_DYNAMICS_PLUGIN=ON -DBUILD_AGX_BODYEXTENSION_PLUGIN=ON -DBUILD_WRS2018=ON -DBUILD_SCENE_EFFECTS_PLUGIN=ON -DBUILD_HAIRO_WORLD_PLUGIN=ON -DENABLE_INSTALL_RPATH_USE_LINK_PATH=ON
+
+# Run Choreonoid With ROS2
+$ source install/setup.bash
+$ ros2 run choreonoid_ros choreonoid
+```
+
 ## 2024 Pre-tournament
 - 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
 
