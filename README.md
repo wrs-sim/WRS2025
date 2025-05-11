@@ -192,6 +192,11 @@ $ source install/setup.bash
 $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/registration/registration_m3.yaml --wrs-util M3
 ```
 
+## Important Notice
+- Robot simulation will be performed on computers provided by the organizers (https://www.amazon.co.jp/dp/B0BTM9SYSX?language=en_US).
+
+- Please obtain the simulation results via network communication and operate the robots on your own computers. The computers provided by the organizers will serve as servers, and the computers provided by the competitors will serve as clients.
+
 ## 2024 Pre-tournament
 - 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
 
