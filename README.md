@@ -193,9 +193,12 @@ $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/regist
 ```
 
 ## Important Notice
-- Robot simulation will be performed on computers provided by the organizers (https://www.amazon.co.jp/dp/B0BTM9SYSX?language=en_US).
+- Robot simulation will be performed on computers provided by the organizers
+	- The specs of the organizer's computer: https://www.amazon.co.jp/dp/B0BTM9SYSX?language=en_US
 
 - Please obtain the simulation results via network communication and operate the robots on your own computers. The computers provided by the organizers will serve as servers, and the computers provided by the competitors will serve as clients.
+	- The mobile robot is in a simulation on the organizer's computers and connected to the competitor's computers via the network. This relationship is similar to a real mobile robot connected to a host computers via a network. If a team wishes to use its unique robot or functions in the match, it will submit the robot model and program to the organizers, who will implement it on the competition simulation computers.
+
 
 ## 2024 Pre-tournament
 - 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
