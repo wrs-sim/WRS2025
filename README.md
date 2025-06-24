@@ -206,6 +206,26 @@ $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/regist
 	- The mobile robot is in a simulation on the organizer's computers and connected to the competitor's computers via the network. This relationship is similar to a real mobile robot connected to a host computers via a network. If a team wishes to use its unique robot or functions in the match, it will submit the robot model and program to the organizers, who will implement it on the competition simulation computers.
 
 
+## Pre-check list for competitors
+
+1. Obtaining the AGX license and HAIROWorldPlugin
+・Obtain the AGX license from the competition secretariat
+・Apply for use HAIROWorldPlugin and receive the HAIROWorldPlugin.zip file
+
+2. Installing ROS2
+・Install ROS2 appropriate for the OS you are using.
+
+3. Building Choreonoid
+・Build a practice/competition environment by referring to the following page
+https://github.com/wrs-frei-simulation/WRS-2025?tab=readme-ov-file#simulation-environment
+
+4. Loading practice/competition environment
+・Load the practice/competition environment by referring to the following page
+https://github.com/wrs-frei-simulation/WRS-2025?tab=readme-ov-file#practice-environment 
+
+5. Introducing your robots to the environment
+
+
 ## 2024 Pre-tournament
 - 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
 
