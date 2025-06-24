@@ -85,6 +85,11 @@ Choreonoid is used as the robot simulator in the World Robot Summit 2025 Simulat
 Before constructing the WRS2025 environmental specifications for Choreonoid, please install this software.
 - https://choreonoid.org/ja/documents/latest/agxdynamics/install/install-agx-ubuntu.html
 
+#### HAIROWorldPlugin installation reference
+Please obtain this software before building Choreonoid's WRS2025 environment specification.
+Competitors are requested to contact the competition secretariat.
+Others should contact JAEA Suzuki at suzuki.kenta38※jaea.go.jp.（Change the ※ to @ when you send us an email. ）
+
 #### How to install Choreonoid
 - Requirements
 	- OS: Ubuntu22.04，CPU: amd64 (Intel CPU, Ryzen CPU)
