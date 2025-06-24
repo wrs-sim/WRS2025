@@ -88,7 +88,8 @@ Before constructing the WRS2025 environmental specifications for Choreonoid, ple
 #### HAIROWorldPlugin installation reference
 Please obtain this software before building Choreonoid's WRS2025 environment specification.
 Competitors are requested to contact the competition secretariat.
-Others should contact JAEA Suzuki at suzuki.kenta38※jaea.go.jp.（Change the ※ to @ when you send us an email. ）
+Others should contact JAEA Suzuki at "suzuki.kenta38※jaea.go.jp" .
+（Change the ※ to @ when you send us an email. ）
 
 #### How to install Choreonoid
 - Requirements
