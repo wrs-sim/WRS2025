@@ -224,7 +224,8 @@ $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/regist
 	- https://github.com/wrs-frei-simulation/WRS-2025?tab=readme-ov-file#practice-environment 
 
 5. Introducing your robots to the environment
-
+	- Introduce your own robot into a environment by referring to the following page
+	- https://github.com/wrs-frei-simulation/WRS-2025/blob/main/place_robot.md
 
 ## 2024 Pre-tournament
 - 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
