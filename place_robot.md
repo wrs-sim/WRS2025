@@ -69,5 +69,10 @@ $ ./bin/choreonoid <path/to/yaml> --wrs-util <mission_name>
 ```
 Enter the following. Be careful about the order of the arguments. For ```<path/to/yaml>```, enter the path to the YAML file created in the previous step as an argument. The arguments that can be specified with ```<mission_name>``` are as follows.
 
+| Arguments | Explanation |
+| ---- | ---- |
+| ``M3`` | Loading practice environment |
+
+
 When you start Choreonoid, if the robot model is misaligned, adjust the initial position coordinates [x, y, z] using start_position. Here, coordinates are specified in meters.
 This completes the loading of the practice environment.
