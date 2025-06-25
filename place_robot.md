@@ -45,6 +45,15 @@ robot_list: &RobotList [ project_team1/my_robot ]
 Rewrite it as shown above.
 In addition to your own robot models, you can use the following standard robot models.
 
+| Project name | Explanation |
+| ---- | ---- |
+| ``AizuSpiderDA-ROS2`` | AizuSpiderDS for AGX simulators. AizuSpiderDS subscribes to the /joy topic of ROS2's sensor_msgs::msg::Joy . |
+| ``AizuSpiderDS-ROS2`` | AizuSpiderDS for AIST Simulator. AizuSpiderDS subscribes to the /joy topic of ROS2's sensor_msgs::msg::Joy . |
+| ``MonoCrawlerNA-ROS2`` | MonoCrawler for AGX simulators. MonoCrawler subscribes to the /joy topic of ROS2's sensor_msgs::msg::Joy . |
+| ``MonoCrawlerNS-ROS2`` | MonoCrawler for AIST Simulator. MonoCrawler subscribes to the /joy topic of ROS2's sensor_msgs::msg::Joy . |
+| ``HobbyDrone-ROS2`` | HobbyDrone. HobbyDrone subscribes to the ROS2 sensor_msgs::msg::Joy/joy2 topic . |
+| ``SampleDrone-ROS2`` | SampleDrone. SampleDrone subscribes to the /cmd_vel topic of ROS2's geometry_msgs::msg::Twist. To use this argument, you need the ROS2 package choreonoid_ros2_sample_drone_tutorial(https://github.com/k38-suzuki/choreonoid_ros2_sample_drone_tutorial) . |
+
 For example, if you want to use AizuSpider (``AizuSpiderDA-ROS2``) for the AGX simulator in the ROS environment together with your own robot model (``my_robot``), please modify the first line of the YAML file as follows.
 
 ```
