@@ -1,3 +1,5 @@
+## Introducing your robots to the environment
+
 This page explains the procedure for placing your robot models in the practice environment when loading them. The main steps are as follows:
 1. Copy the robot model file
 2. Create a project
