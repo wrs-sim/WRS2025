@@ -9,14 +9,11 @@ links:
     translation: [ 0, 0, 0 ]
     joint_type: fixed
     elements:
-      -
+      - &fountain
         type: FountainDevice
         name: Fountain1
         translation: [ -0.13, 0, 0 ]
-      -
-        type: FountainDevice
-        name: Fountain2
-        translation: [ -0.13, 0.25, 0.3 ]
+      - { <<: *fountain, name: Fountain2, translation: [ -0.13, 0.25, 0.3 ] }
   -
     type: SubBody
     uri: "pipe/pipe_line_e.body"
