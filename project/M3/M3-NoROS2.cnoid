@@ -289,7 +289,7 @@ views:
     state:
       operation_mode: view
       viewpoint_operation_mode: third_person
-      focus_position: [ -15.0019, -10.5425, 8.00887 ]
+      focus_position: [ -15.0054, -11.6311, 11.8053 ]
       visible_polygon_elements: [ face ]
       highlighting: false
       collision_lines: false
@@ -297,9 +297,9 @@ views:
         -
           camera: [ System, Perspective ]
           is_current: true
-          eye: [ -19.0669, -11.5687, 10.743 ]
-          direction: [ 0.752252, 0.48633, -0.444522 ]
-          up: [ 0.373303, 0.24134, 0.895768 ]
+          eye: [ -23.8167, -17.9165, 16.1016 ]
+          direction: [ 0.685316, 0.526669, -0.502954 ]
+          up: [ 0.398793, 0.306475, 0.864313 ]
         -
           camera: [ System, Orthographic ]
           ortho_height: 20
@@ -357,10 +357,13 @@ views:
       listing_mode: list
       body_items:
         -
+          id: 6
+          selected_links: [ 0 ]
+        -
           id: 2
           selected_links: [ 0 ]
         -
-          id: 6
+          id: 15
           selected_links: [ 0 ]
   -
     id: 8
@@ -579,7 +582,17 @@ Body:
         show_cm_projection: false
         show_zmp: false
       -
+        body_item: 53
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
         body_item: 54
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 55
         show_cm: false
         show_cm_projection: false
         show_zmp: false
@@ -608,6 +621,71 @@ Body:
         show_cm: false
         show_cm_projection: false
         show_zmp: false
+      -
+        body_item: 61
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 62
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 63
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 65
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 66
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 67
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 68
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 69
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 71
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 72
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 73
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 74
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 75
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
   "SplineFilterDialog":
     isInputFrameRateSpecified: false
     inputFrameRate: 200
@@ -620,17 +698,17 @@ viewAreas:
     contents:
       type: splitter
       orientation: horizontal
-      sizes: [ 1401, 445 ]
+      sizes: [ 1887, 599 ]
       children:
         -
           type: splitter
           orientation: horizontal
-          sizes: [ 362, 1035 ]
+          sizes: [ 488, 1395 ]
           children:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 504, 504 ]
+              sizes: [ 704, 704 ]
               children:
                 -
                   type: pane
@@ -642,7 +720,7 @@ viewAreas:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 757, 251 ]
+              sizes: [ 1056, 352 ]
               children:
                 -
                   type: pane
@@ -654,7 +732,7 @@ viewAreas:
         -
           type: splitter
           orientation: vertical
-          sizes: [ 222, 786 ]
+          sizes: [ 310, 1098 ]
           children:
             -
               type: pane
@@ -662,7 +740,7 @@ viewAreas:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 306, 476 ]
+              sizes: [ 428, 666 ]
               children:
                 -
                   type: pane
