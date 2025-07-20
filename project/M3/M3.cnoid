@@ -130,7 +130,7 @@ items:
           class: BodyItem
           is_checked: true
           data:
-            file: "../../model/PS/A1/Room2.body"
+            file: "${SHARE}/WRS2025/model/PS/A1/Room2.body"
             format: CHOREONOID-BODY
             rootPosition: [ 8.2, 1.325, 0 ]
             rootAttitude: [
@@ -155,7 +155,7 @@ items:
           class: BodyItem
           is_checked: true
           data:
-            file: "../../model/PS/A1/Room2.body"
+            file: "${SHARE}/WRS2025/model/PS/A1/Room2.body"
             format: CHOREONOID-BODY
             rootPosition: [ 4, 8.2, 0 ]
             rootAttitude: [
@@ -180,7 +180,7 @@ items:
           class: BodyItem
           is_checked: true
           data:
-            file: "../../model/PS/A1/BaseB.body"
+            file: "${SHARE}/WRS2025/model/PS/A1/BaseB.body"
             format: CHOREONOID-BODY
             rootPosition: [ 4.8, 6.166, 0.293371908 ]
             rootAttitude: [
@@ -204,7 +204,7 @@ items:
           class: BodyItem
           is_checked: true
           data:
-            file: "../../model/PS/A1/BaseB.body"
+            file: "${SHARE}/WRS2025/model/PS/A1/BaseB.body"
             format: CHOREONOID-BODY
             rootPosition: [ 4.785, 6.166, 0.583037069 ]
             rootAttitude: [
@@ -228,7 +228,7 @@ items:
           class: BodyItem
           is_checked: true
           data:
-            file: "../../model/PS/A1/Rod-I-25-1.0.body"
+            file: "${SHARE}/WRS2025/model/PS/A1/Rod-I-25-1.0.body"
             format: CHOREONOID-BODY
             rootPosition: [ 4.538, 6.166, 0.293 ]
             rootAttitude: [
@@ -252,7 +252,7 @@ items:
           class: BodyItem
           is_checked: true
           data:
-            file: "../../model/PS/A1/Rod-I-25-1.0.body"
+            file: "${SHARE}/WRS2025/model/PS/A1/Rod-I-25-1.0.body"
             format: CHOREONOID-BODY
             rootPosition: [ 4.533, 6.166, 0.664899478 ]
             rootAttitude: [
@@ -261,9 +261,9 @@ items:
               0, 0.31067643, 0.950515732 ]
             initialRootPosition: [ 4.533, 6.166, 0.664899478 ]
             initialRootAttitude: [
-              -1.22586319e-09, -0.950515732, 0.31067643,
-              1, -1.22586319e-09, 1.55999158e-10,
-              1.55999158e-10, 0.31067643, 0.950515732 ]
+              -4.86499951e-10, -0.950515732, 0.31067643,
+              1, -4.86499951e-10, 3.82592014e-11,
+              3.82593124e-11, 0.31067643, 0.950515732 ]
             fix_root: false
             collisionDetection: true
             selfCollisionDetection: false
@@ -306,7 +306,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 1.75, 0 ]
                 rootAttitude: [
@@ -330,7 +330,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 0.75, 0 ]
                 rootAttitude: [
@@ -354,7 +354,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 4.5, 0 ]
                 rootAttitude: [
@@ -378,7 +378,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 2, 0 ]
                 rootAttitude: [
@@ -402,7 +402,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 1.5, 0 ]
                 rootAttitude: [
@@ -426,7 +426,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 0.5, 0 ]
                 rootAttitude: [
@@ -450,7 +450,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 2.15, 0 ]
                 rootAttitude: [
@@ -474,7 +474,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 4.35, 0 ]
                 rootAttitude: [
@@ -498,7 +498,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 5, 5, 0 ]
                 rootAttitude: [
@@ -522,7 +522,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 5.25, 5, 0 ]
                 rootAttitude: [
@@ -546,7 +546,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 5.875, 5, 0 ]
                 rootAttitude: [
@@ -570,7 +570,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 5.625, 5, 0 ]
                 rootAttitude: [
@@ -594,7 +594,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A1/subbody/fence-door.body"
+                file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence-door.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ 4.5, 2.75, 0 ]
                 rootAttitude: [
@@ -807,7 +807,7 @@ items:
           class: BodyItem
           is_checked: true
           data:
-            file: "../../model/PS/A3/catwalk_half.body"
+            file: "${SHARE}/WRS2025/model/PS/A3/catwalk_half.body"
             format: CHOREONOID-BODY
             rootPosition: [ -5, -5, 3 ]
             rootAttitude: [
@@ -832,7 +832,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A3/stairsA3.body"
+                file: "${SHARE}/WRS2025/model/PS/A3/stairsA3.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ -5, -7.45, 1.5 ]
                 rootAttitude: [
@@ -857,7 +857,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/stairsA3-step.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/stairsA3-step.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -5, -6.25, 1.49 ]
                     rootAttitude: [
@@ -881,7 +881,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/stairsA3.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/stairsA3.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -5, -5.3, 0 ]
                     rootAttitude: [
@@ -905,7 +905,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/subbody/handrail.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -5.5, -4.55, 0 ]
                     rootAttitude: [
@@ -929,7 +929,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/subbody/handrail.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -4.5, -4.55, 0 ]
                     rootAttitude: [
@@ -953,7 +953,7 @@ items:
               class: BodyItem
               is_checked: true
               data:
-                file: "../../model/PS/A3/Slope1.body"
+                file: "${SHARE}/WRS2025/model/PS/A3/Slope1.body"
                 format: CHOREONOID-BODY
                 rootPosition: [ -7.3, -7.45, 2.25 ]
                 rootAttitude: [
@@ -978,7 +978,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/Slope2.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/Slope2.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -7.3, -4.95, 0.75 ]
                     rootAttitude: [
@@ -1002,7 +1002,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/Box1.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/Box1.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -7.3, -6.95, 0.75 ]
                     rootAttitude: [
@@ -1026,7 +1026,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/subbody/handrail.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -6.45, -4.5, 0 ]
                     rootAttitude: [
@@ -1050,7 +1050,7 @@ items:
                   class: BodyItem
                   is_checked: true
                   data:
-                    file: "../../model/PS/A3/subbody/handrail.body"
+                    file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -8.15, -4.5, 0 ]
                     rootAttitude: [
@@ -1195,12 +1195,50 @@ items:
             scene_sensitive: true
     -
       id: 56
+      name: "BreakerBox"
+      plugin: Body
+      class: BodyItem
+      is_checked: true
+      data:
+        file: "${SHARE}/WRS2025/model/PS/Common/misc/breaker_box.body"
+        format: CHOREONOID-BODY
+        rootPosition: [ -10, 4, 1 ]
+        rootAttitude: [
+          1, 0, 0,
+          0, 1, 0,
+          0, 0, 1 ]
+        jointDisplacements: [ -45, -45, -45 ]
+        initialRootPosition: [ -10, 4, 1 ]
+        initialRootAttitude: [
+          1, 0, 0,
+          0, 1, 0,
+          0, 0, 1 ]
+        fix_root: true
+        collisionDetection: true
+        selfCollisionDetection: false
+        lock_location: false
+        scene_sensitive: true
+      children:
+        -
+          id: 57
+          name: "BreakerBoxController"
+          plugin: Body
+          class: SimpleControllerItem
+          data:
+            isNoDelayMode: false
+            controllerOptions: ""
+            controller: "BreakerBoxController"
+            base_directory: "Controller directory"
+            reloading: false
+            export_symbols: false
+    -
+      id: 58
       name: "QR"
       plugin: Base
       class: FolderItem
       children:
         -
-          id: 57
+          id: 59
           name: "QRA1-1"
           plugin: Body
           class: BodyItem
@@ -1224,7 +1262,7 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 58
+          id: 60
           name: "QRA1-2"
           plugin: Body
           class: BodyItem
@@ -1248,7 +1286,7 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 59
+          id: 61
           name: "QRA1-3"
           plugin: Body
           class: BodyItem
@@ -1272,7 +1310,7 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 60
+          id: 62
           name: "QRA1-4"
           plugin: Body
           class: BodyItem
@@ -1296,7 +1334,7 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 61
+          id: 63
           name: "QRA1-5"
           plugin: Body
           class: BodyItem
@@ -1320,7 +1358,7 @@ items:
             lock_location: false
             scene_sensitive: true
     -
-      id: 62
+      id: 64
       name: "CFDCollider"
       plugin: SimpleCollider
       class: MultiColliderItem
@@ -1359,7 +1397,7 @@ items:
         mosaic_chance: 0
         kernel: 16
     -
-      id: 63
+      id: 65
       name: "TCCollider"
       plugin: SimpleCollider
       class: MultiColliderItem
@@ -1398,7 +1436,7 @@ items:
         mosaic_chance: 0
         kernel: 16
     -
-      id: 64
+      id: 66
       name: "VFXCollider"
       plugin: SimpleCollider
       class: MultiColliderItem
@@ -1452,7 +1490,7 @@ views:
     class: ItemTreeView
     mounted: true
     state:
-      expanded: [ 10, 12, 39, 40, 45 ]
+      expanded: [ 10, 12, 39, 40, 45, 56 ]
   -
     id: 3
     plugin: Base
@@ -1477,7 +1515,7 @@ views:
     state:
       operation_mode: view
       viewpoint_operation_mode: third_person
-      focus_position: [ -15.0025, -14.7961, 13.2889 ]
+      focus_position: [ -15.0061, -7.25119, 9.25177 ]
       visible_polygon_elements: [ face ]
       highlighting: false
       collision_lines: false
@@ -1485,7 +1523,7 @@ views:
         -
           camera: [ System, Perspective ]
           is_current: true
-          eye: [ -23.8167, -17.9165, 16.1016 ]
+          eye: [ -23.0052, -17.2928, 15.506 ]
           direction: [ 0.685316, 0.526669, -0.502954 ]
           up: [ 0.398793, 0.306475, 0.864313 ]
         -
@@ -1834,12 +1872,7 @@ Body:
         show_cm_projection: false
         show_zmp: false
       -
-        body_item: 57
-        show_cm: false
-        show_cm_projection: false
-        show_zmp: false
-      -
-        body_item: 58
+        body_item: 56
         show_cm: false
         show_cm_projection: false
         show_zmp: false
@@ -1855,6 +1888,16 @@ Body:
         show_zmp: false
       -
         body_item: 61
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 62
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
+      -
+        body_item: 63
         show_cm: false
         show_cm_projection: false
         show_zmp: false

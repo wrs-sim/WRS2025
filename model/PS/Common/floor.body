@@ -18,3 +18,24 @@ links:
         translation: [ -3.5, -0.75, 0 ]
         geometry: { type: Box, size: [ 3.0, 4.5, 0.22 ] }
         appearance: { material: { diffuseColor: [ 1, 0, 0 ], transparency: 0.5 } }
+      - &light
+        type: SpotLight
+        name: Light1
+        translation: [ 0.0, 0.0, 3.5 ]
+        beamWidth: 90
+        cutOffAngle: 120
+        cutOffExponent: 6
+        attenuation: [ 1, 0, 0.01 ]
+        on: false
+        elements:
+          -
+            type: Shape
+            rotation: [ 1, 0, 0, 90 ]
+            geometry: { type: Cone, height: 0.1, radius: 0.05 }
+            appearance: { material: { diffuse: [ 1.0, 1.0, 0.4 ] } }
+  - &breaker
+    type: SubBody
+    uri: "./misc/breaker_box.body"
+    parent: Floor
+    translation: [ -5.0, -2.0, 1.0 ]
+    joint_type: fixed
