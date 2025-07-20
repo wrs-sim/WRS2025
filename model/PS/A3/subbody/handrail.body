@@ -56,7 +56,7 @@ links:
             geometry: { type: Cylinder, radius: 0.02, height: 2.2 }
           - <<: *guard
             type: Shape
-            translation: [ 2.9, 0, 3.25 ]
+            translation: [ 2.65, 0, 3.25 ]
             rotation: [[ 0, 0, 1, 90 ], [1, 0, 0, -45]]
             geometry: { type: Cylinder, radius: 0.02, height: 2.2 }
       -
@@ -65,17 +65,7 @@ links:
         elements:
           - <<: *guard
             type: Shape
-            translation: [ 2.15, 0, 2.0 ]
-            rotation: [ 1, 0, 0, -90 ]
-            geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
-          - <<: *guard
-            type: Shape
-            translation: [ 1.925, 0, 2.0 ]
-            rotation: [ 1, 0, 0, -90 ]
-            geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
-          - <<: *guard
-            type: Shape
-            translation: [ 1.7, 0, 2.0 ]
+            translation: [ 1.9, 0, 2.0 ]
             rotation: [ 1, 0, 0, -90 ]
             geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
           - <<: *guard
@@ -89,45 +79,39 @@ links:
           -
             type: Transform
             elements:
-#              -
-#                type: Shape
-#                translation: [ 2.15, 0, 2.25 ]
-#                rotation: [ 1, 0, 0, -90 ]
-#                geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
-#                appearance: { material: { diffuse: [ 0.7, 0.7, 0.7 ] } }
               -
                 type: Shape
-                translation: [ 2.4, 0, 2.25 ]
+                translation: [ 2.15, 0, 2.25 ]
                 rotation: [ 1, 0, 0, -90 ]
                 geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
                 appearance: { material: { diffuse: [ 0.7, 0.7, 0.7 ] } }
               -
                 type: Shape
-                translation: [ 2.65, 0, 2.5 ]
+                translation: [ 2.4, 0, 2.5 ]
                 rotation: [ 1, 0, 0, -90 ]
                 geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
                 appearance: { material: { diffuse: [ 0.7, 0.7, 0.7 ] } }
               -
                 type: Shape
-                translation: [ 2.9, 0, 2.75 ]
+                translation: [ 2.65, 0, 2.75 ]
                 rotation: [ 1, 0, 0, -90 ]
                 geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
                 appearance: { material: { diffuse: [ 0.7, 0.7, 0.7 ] } }
               -
                 type: Shape
-                translation: [ 3.15, 0, 3 ]
+                translation: [ 2.9, 0, 3.0 ]
                 rotation: [ 1, 0, 0, -90 ]
                 geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
                 appearance: { material: { diffuse: [ 0.7, 0.7, 0.7 ] } }
               -
                 type: Shape
-                translation: [ 3.4, 0, 3.25 ]
+                translation: [ 3.15, 0, 3.25 ]
                 rotation: [ 1, 0, 0, -90 ]
                 geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
                 appearance: { material: { diffuse: [ 0.7, 0.7, 0.7 ] } }
               -
                 type: Shape
-                translation: [ 3.65, 0, 3.5 ]
+                translation: [ 3.4, 0, 3.5 ]
                 rotation: [ 1, 0, 0, -90 ]
                 geometry: { type: Cylinder, radius: 0.02, height: 1.0 }
                 appearance: { material: { diffuse: [ 0.7, 0.7, 0.7 ] } }

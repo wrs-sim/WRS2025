@@ -22,7 +22,6 @@ install(DIRECTORY
   model
   project
 #  script
-# registration
   share
   DESTINATION ${CHOREONOID_SHARE_SUBDIR}/WRS2025)
 
