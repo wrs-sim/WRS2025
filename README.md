@@ -140,7 +140,7 @@ $ ./bin/choreonoid
 
 #### 3. Building Choreonoid for WRS2025 (with ROS2 integration)
 1. Install ROS2 (Humble Hawksbill) first.
-```Bash
+```bash
 # Add the ROS 2 apt repository
 $ sudo apt install software-properties-common
 $ sudo add-apt-repository universe
