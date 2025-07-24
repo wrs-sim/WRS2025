@@ -1,1 +1,2 @@
+add_subdirectory(LivePlaybackPlugin)
 add_subdirectory(WRS2025Plugin)

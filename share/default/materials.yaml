@@ -153,7 +153,8 @@ contact_materials:
   -
     materials: [ Ground, AizuSpiderTracks ]
     youngs_modulus: 1e10
-    friction: 1.0
+    # friction: 1.0
+    friction: 1.4
     secondary_friction: 0.5
     restitution: 0.0
     surface_viscosity: 1e-3 # 1e-2
