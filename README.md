@@ -7,6 +7,15 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We are going to upload a simplified course that will allow you to perform each task in the future.
 
+## New information
+- As part of the harsh environment challenge, the following video communication noise occasionally occurs. Please operate the robot so that it functions properly, even in the presence of noise.
+	- White Noise
+	<img width="50%" src="./fig/noise1.png">
+ 
+	- Block Noise
+	<img width="50%" src="./fig/noise2.png">
+
+
 ### Ramp
 <img width="33%" src="./fig/ramp.png">
 
