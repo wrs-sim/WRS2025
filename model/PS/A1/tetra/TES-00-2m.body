@@ -1,0 +1,675 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+angleUnit: degree
+name: Tetrahedron00-2
+
+# -------------------------------------------------- #
+
+SCALE: &SCALE
+#  scale: [1,1,1]
+  scale: [2,2,2]
+#  scale: [3,3,3]
+
+# -------------------------------------------------- #
+
+COLOR_SHAFT: &COLOR_SHAFT
+  material:
+    diffuseColor: [ 0.8, 0.8, 0.8 ]
+    specularColor: [ 0.8, 0.8, 0.8 ]
+    shininess: 0.12
+
+COLOR_TOP: &COLOR_TOP
+  material:
+    diffuseColor: [ 0.34, 0.34, 0.34 ]
+    specularColor: [ 0.34, 0.34, 0.34 ]
+    shininess: 0.12
+
+COLOR_ORIGIN: &COLOR_ORIGIN
+  material:
+    diffuseColor: [ 1, 0, 0 ]
+    specularColor: [ 1, 0, 0 ]
+    shininess: 0.12
+
+# -------------------------------------------------- #
+
+SHAFT: &SHAFT
+  type: Shape
+  jointType: fixed
+  geometry:
+    type: Cylinder
+    radius: 0.0075
+    height: 1.0
+  appearance: *COLOR_SHAFT
+
+TOP: &TOP
+  type: Transform
+  elements:
+    -
+      type: Shape
+      geometry: { type: Sphere, radius: 0.0075 }
+      appearance: *COLOR_TOP
+
+ORIGIN: &ORIGIN
+  type: Shape
+  #type: Visual
+  #type: Collision
+  #geometry: { type: Sphere, radius: 0.0075 }
+  geometry: { type: Sphere, radius: 0.05 }
+  appearance: *COLOR_ORIGIN
+
+# -------------------------------------------------- #
+
+WALL_TEXTURE: &WALL_TEXTURE "./resource/wall.png"
+
+WALL_APP: &WALL_APP
+  texture:
+    url: *WALL_TEXTURE
+
+TRIANGLEPLATE: &TRIANGLEPLATE
+  type: Transform
+  #rotation: [ 1, 0, 0, 90 ]
+  elements:
+    -
+      type: Shape
+      material: Ground
+      geometry:
+        type: Extrusion
+        crossSection: [ -0.28868, -0.5,
+                        -0.28868,  0.5, 
+                         0.57735,  0.0,
+                        -0.28868, -0.5 ]
+        spine: [ 0.0,  0.0075, 0.0,
+                 0.0, -0.0075, 0.0 ]
+      appearance: *WALL_APP
+
+# -------------------------------------------------- #
+
+TRIANGLE: &TRIANGLE
+  type: Transform
+  elements:
+    -
+      <<: *SHAFT
+      #name: LINK1
+      translation: [ 0.28868, 0, -0.20412 ]
+    -
+      <<: *SHAFT
+      #name: LINK2
+      translation: [ -0.14434, -0.25, -0.20412 ]
+      rotation: [ 0, 0, 1, 60 ]
+    -
+      <<: *SHAFT
+      #name: LINK3
+      translation: [ -0.14434, 0.25, -0.20412 ]
+      rotation: [ 0, 0, 1, -60 ]
+
+HONE: &HONE
+  type: Transform
+  elements:
+    -
+      <<: *SHAFT
+      #name: LINK4
+      rotation: [[ 0, 1, 0, -54.74 ], [ 0, 0, 1, 90 ]]
+      translation: [ -0.2865, 0, 0.20412 ]
+    -
+      type: Transform
+      parent: ROOT
+      jointType: fixed
+      translation: [ 0.14434, 0.25, 0.20412 ]
+      rotation: [ 0, 0, 1, -120 ]
+      elements:
+        type: Transform
+        rotation: [[ 0, 1, 0, -54.74 ], [ 0, 0, 1, 90 ]]
+        elements:
+          -
+            <<: *SHAFT
+            #name: LINK5
+    -
+      type: Transform
+      parent: ROOT
+      jointType: fixed
+      translation: [ 0.14434, -0.25, 0.20412 ]
+      rotation: [ 0, 0, 1, 120 ]
+      elements:
+        type: Transform
+        rotation: [[ 0, 1, 0, -54.74 ], [ 0, 0, 1, 90 ]]
+        elements:
+          -
+            <<: *SHAFT
+            #name: LINK6
+
+# ------------------------- #
+
+TETRA: &TETRA
+  type: Transform
+  elements:
+    -
+      <<: *TRIANGLE
+    -
+      <<: *HONE
+
+# -------------------------------------------------- #
+
+TRANS_SIDE_A: &TRANS_SIDE_A
+  translation: [ -0.19245, -0.33333, 0.13608 ]
+  rotation: [ 0.86603, -0.5, 0.0, 70.53]
+
+
+TRANS_SIDE_B: &TRANS_SIDE_B
+  translation: [ -0.19245, 0.33333, 0.13608 ]
+  rotation: [ 0.86603, 0.5, 0.0, -70.53]
+
+
+TRANS_SIDE_C: &TRANS_SIDE_C
+  translation: [ 0.3849, 0, 0.13608 ]
+  rotation: [ 0, 1, 0, 70.53]
+
+TRANS_SIDE_D: &TRANS_SIDE_D
+  translation: [ 0, 0, -0.40824 ]
+  rotation: [ 1, 0, 0, 180]
+
+
+# -------------------------------------------------- #
+
+WALL_01: &WALL_01
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # B SIDE
+#      translation: [ -0.09623, 0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # C SIDE
+#      translation: [ 0.19245, 0, 0.06804 ]
+#      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # D SIDE
+#      translation: [ 0, 0, -0.20412 ]
+#      rotation: [ 1, 0, 0, -90 ]
+#      <<: *TRIANGLEPLATE
+
+WALL_02: &WALL_02
+  type: Transform
+  elements:
+#    - # A SIDE
+#      translation: [ -0.09623, -0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # C SIDE
+#      translation: [ 0.19245, 0, 0.06804 ]
+#      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # D SIDE
+#      translation: [ 0, 0, -0.20412 ]
+#      rotation: [ 1, 0, 0, -90 ]
+#      <<: *TRIANGLEPLATE
+
+WALL_03: &WALL_03
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # C SIDE
+#      translation: [ 0.19245, 0, 0.06804 ]
+#      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # D SIDE
+#      translation: [ 0, 0, -0.20412 ]
+#      rotation: [ 1, 0, 0, -90 ]
+#      <<: *TRIANGLEPLATE
+
+WALL_04: &WALL_04
+  type: Transform
+  elements:
+#    - # A SIDE
+#      translation: [ -0.09623, -0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # B SIDE
+#      translation: [ -0.09623, 0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # D SIDE
+#      translation: [ 0, 0, -0.20412 ]
+#      rotation: [ 1, 0, 0, -90 ]
+#      <<: *TRIANGLEPLATE
+
+WALL_05: &WALL_05
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # B SIDE
+#      translation: [ -0.09623, 0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # D SIDE
+#      translation: [ 0, 0, -0.20412 ]
+#      rotation: [ 1, 0, 0, -90 ]
+#      <<: *TRIANGLEPLATE
+
+WALL_06: &WALL_06
+  type: Transform
+  elements:
+#    - # A SIDE
+#      translation: [ -0.09623, -0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # D SIDE
+#      translation: [ 0, 0, -0.20412 ]
+#      rotation: [ 1, 0, 0, -90 ]
+#      <<: *TRIANGLEPLATE
+
+WALL_07: &WALL_07
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # D SIDE
+#      translation: [ 0, 0, -0.20412 ]
+#      rotation: [ 1, 0, 0, -90 ]
+#      <<: *TRIANGLEPLATE
+
+WALL_08: &WALL_08
+  type: Transform
+  elements:
+#    - # A SIDE
+#      translation: [ -0.09623, -0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # B SIDE
+#      translation: [ -0.09623, 0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # C SIDE
+#      translation: [ 0.19245, 0, 0.06804 ]
+#      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+WALL_09: &WALL_09
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # B SIDE
+#      translation: [ -0.09623, 0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # C SIDE
+#      translation: [ 0.19245, 0, 0.06804 ]
+#      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+WALL_10: &WALL_10
+  type: Transform
+  elements:
+#    - # A SIDE
+#      translation: [ -0.09623, -0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # C SIDE
+#      translation: [ 0.19245, 0, 0.06804 ]
+#      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+WALL_11: &WALL_11
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # C SIDE
+#      translation: [ 0.19245, 0, 0.06804 ]
+#      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+WALL_12: &WALL_12
+  type: Transform
+  elements:
+#    - # A SIDE
+#      translation: [ -0.09623, -0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+#    - # B SIDE
+#      translation: [ -0.09623, 0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+WALL_13: &WALL_13
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+#    - # B SIDE
+#      translation: [ -0.09623, 0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+WALL_14: &WALL_14
+  type: Transform
+  elements:
+#    - # A SIDE
+#      translation: [ -0.09623, -0.16667, 0.06804 ]
+#      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+#      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+WALL_15: &WALL_15
+  type: Transform
+  elements:
+    - # A SIDE
+      translation: [ -0.09623, -0.16667, 0.06804 ]
+      rotation: [[ -0.86603, 0.5, 0, -70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # B SIDE
+      translation: [ -0.09623, 0.16667, 0.06804 ]
+      rotation: [[ -0.86603, -0.5, 0, 70.53 ], [ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # C SIDE
+      translation: [ 0.19245, 0, 0.06804 ]
+      rotation: [[ 0, 1, 0, 70.53 ],[ 1, 0, 0, 90 ]]
+      <<: *TRIANGLEPLATE
+    - # D SIDE
+      translation: [ 0, 0, -0.20412 ]
+      rotation: [ 1, 0, 0, -90 ]
+      <<: *TRIANGLEPLATE
+
+# -------------------------------------------------- #
+
+links:
+  -
+    name: BASE
+    jointType: fixed
+    #elements: *ORIGIN
+  -
+    name: ROOT
+    parent: BASE
+    translation: [ 0, 0, 0.20412]
+    jointType: fixed
+    elements:
+      -
+        parent: ROOT
+        type: Transform
+        <<: *SCALE
+        elements:
+          -
+            type: Transform
+            elements:
+              #- *ORIGIN
+              - *TETRA
+              #- *WALL_08
+
+##          - # SIDE_A
+##            type: Transform
+##            <<: *TRANS_SIDE_A
+##            elements:
+##              - *TETRA
+##              #- *WALL_XX
+##          - # SIDE_B
+##            type: Transform
+##            <<: *TRANS_SIDE_B
+##            elements:
+##              - *TETRA
+##              #- *WALL_XX
+##          - # SIDE_C
+##            type: Transform
+##            <<: *TRANS_SIDE_C
+##            elements:
+##              - *TETRA
+##              #- *WALL_XX
+
+#          - # SIDE_D
+#            type: Transform
+#            <<: *TRANS_SIDE_D
+#            elements:
+#              - *TETRA
+#              #- *WALL_XX
+
+#          - prefix: T2_
+#            type: Transform
+#            <<: *TRANS_SIDE_A
+#            elements:
+#              - <<: *TETRA
+#              #- <<: *WALL_01
+#
+#          - prefix: T3_
+#            type: Transform
+#            <<: *TRANS_SIDE_B
+#            elements:
+#              - <<: *TETRA
+#              #- <<: *WALL_02
+#
+#          - prefix: T4_
+#            type: Transform
+#            <<: *TRANS_SIDE_A
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_A
+#                elements:
+#                  - <<: *TETRA
+#                  #- <<: *WALL_01
+#
+#          - prefix: T5_
+#            type: Transform
+#            <<: *TRANS_SIDE_B
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_B
+#                elements:
+#                  - <<: *TETRA
+#                  #- <<: *WALL_01
+#
+#          - prefix: T6_
+#            type: Transform
+#            <<: *TRANS_SIDE_A
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_A
+#                elements:
+#                  -
+#                    type: Transform
+#                    <<: *TRANS_SIDE_B
+#                    elements:
+#                      - <<: *TETRA
+#                      - <<: *WALL_01
+#
+#          - prefix: T7_
+#            type: Transform
+#            <<: *TRANS_SIDE_B
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_B
+#                elements:
+#                  -
+#                    type: Transform
+#                    <<: *TRANS_SIDE_A
+#                    elements:
+#                      - <<: *TETRA
+#                      - <<: *WALL_01
+#
+#          - prefix: T8_
+#            type: Transform
+#            <<: *TRANS_SIDE_A
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_A
+#                elements:
+#                  -
+#                    type: Transform
+#                    <<: *TRANS_SIDE_B
+#                    elements:
+#                      -
+#                        type: Transform
+#                        <<: *TRANS_SIDE_C
+#                        elements:
+#                          - <<: *TETRA
+#                          - <<: *WALL_01
+#
+#          - prefix: T9_
+#            type: Transform
+#            <<: *TRANS_SIDE_B
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_B
+#                elements:
+#                  -
+#                    type: Transform
+#                    <<: *TRANS_SIDE_A
+#                    elements:
+#                      -
+#                        type: Transform
+#                        <<: *TRANS_SIDE_C
+#                        elements:
+#                          - <<: *TETRA
+#                          - <<: *WALL_01
+#
+#          - prefix: T10_
+#            type: Transform
+#            <<: *TRANS_SIDE_A
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_A
+#                elements:
+#                  -
+#                    type: Transform
+#                    <<: *TRANS_SIDE_B
+#                    elements:
+#                      -
+#                        type: Transform
+#                        <<: *TRANS_SIDE_C
+#                        elements:
+#                          -
+#                            type: Transform
+#                            <<: *TRANS_SIDE_C
+#                            elements:
+#                              - <<: *TETRA
+#                              - <<: *WALL_01
+#
+#          - prefix: T9_
+#            type: Transform
+#            <<: *TRANS_SIDE_B
+#            elements:
+#              -
+#                type: Transform
+#                <<: *TRANS_SIDE_B
+#                elements:
+#                  -
+#                    type: Transform
+#                    <<: *TRANS_SIDE_A
+#                    elements:
+#                      -
+#                        type: Transform
+#                        <<: *TRANS_SIDE_C
+#                        elements:
+#                          -
+#                            type: Transform
+#                            <<: *TRANS_SIDE_C
+#                            elements:
+#                              - <<: *TETRA
+#                              - <<: *WALL_01
+#
+#
+#
