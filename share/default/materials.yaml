@@ -93,6 +93,17 @@ materials:
     youngs_modulus: 1e10
     roughness: 1.0
     viscosity: 1.0
+  -
+    name: WRSCommonTracks
+    density: 1e3
+    youngs_modulus: 1e10
+    roughness: 1.0
+    viscosity: 1.0
+  -
+    name: WRSCommonWheel
+    youngs_modulus: 1e10
+    roughness: 1.0
+    viscosity: 1.0
 
 contact_materials:
   -
@@ -211,7 +222,7 @@ contact_materials:
   -
     materials: [ Ground, MonoCrawlerTracks ]
     youngs_modulus: 1e10
-    friction: 1.0
+    friction: 1.4
     secondary_friction: 0.5
     restitution: 0.0
     surface_viscosity: 1e-3 # 1e-2
@@ -223,9 +234,14 @@ contact_materials:
     reference_body: MonoCrawlerNA
     reference_link: CHASSIS
   -
-    materials: [ Ground, MonoCrawler2Tracks ]
+    materials: [ MonoCrawlerWheel, MonoCrawlerTracks ]
     youngs_modulus: 1e10
     friction: 1.0
+    restitution: 0.0
+  -
+    materials: [ Ground, MonoCrawler2Tracks ]
+    youngs_modulus: 1e10
+    friction: 1.4
     secondary_friction: 0.5
     restitution: 0.0
     surface_viscosity: 1e-3 # 1e-2
@@ -237,12 +253,26 @@ contact_materials:
     reference_body: MonoCrawler2NA
     reference_link: CHASSIS
   -
-    materials: [ MonoCrawlerWheel, MonoCrawlerTracks ]
+    materials: [ MonoCrawler2Wheel, MonoCrawler2Tracks ]
     youngs_modulus: 1e10
     friction: 1.0
     restitution: 0.0
   -
-    materials: [ MonoCrawler2Wheel, MonoCrawler2Tracks ]
+    materials: [ Ground, WRSCommonTracks ]
+    youngs_modulus: 1e10
+    friction: 1.4
+    secondary_friction: 0.5
+    restitution: 0.0
+    surface_viscosity: 1e-3 # 1e-2
+    secondary_surface_viscosity: 2e-2
+    primary_direction: [ 1, 0, 0 ]
+    friction_model: [ constant_normal_force_oriented_box, direct ]
+    #friction_model: [ oriented_iterative, direct ]
+    constant_normal_force: 500
+    reference_body: <your robot name>
+    reference_link: <root link of your robot>
+  -
+    materials: [ WRSCommonWheel, WRSCommonTracks ]
     youngs_modulus: 1e10
     friction: 1.0
     restitution: 0.0
