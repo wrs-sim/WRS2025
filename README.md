@@ -8,6 +8,10 @@ The competition at the tournament is set up with the scenario of “Information 
 - We are going to upload a simplified course that will allow you to perform each task in the future.
 
 ## New information
+- The simulation environment consisted of four areas, Area 1 to Area 4, as shown below. The competition was divided into each area.
+<img width="50%" src="./fig/wrs2025-plant.png"> 
+<img width="50%" src="./fig/wrs2025-plant2.png">
+
 - As part of the harsh environment challenge, the following video communication noise occasionally occurs. Please operate the robot so that it functions properly, even in the presence of noise.
 	- White Noise
 	<img width="50%" src="./fig/noise1.png">
