@@ -6,18 +6,20 @@ links:
   -
     name: Root
     joint_type: fixed
+    material: Ground
+    AMOR: true
     center_of_mass: [ 0, 0, 0 ]
     mass: 1
-    inertia: [ 0.4575, 0, 0, 0, 0.375, 0, 0, 0, 0.4575 ]
+    #inertia: [ 0.4575, 0, 0, 0, 0.375, 0, 0, 0, 0.4575 ]
     elements:
       -
         type: Shape
         geometry:
           type: Extrusion
           cross_section: [
-            -0.75, -0.75,
-            0.75, -0.75,
-            0.75, 0.75,
-            -0.75, -0.75 ]
-          spine: [ 0, -0.9, 0, 0, 0.9, 0 ]
+            -1.5, -0.75,
+            1.5, -0.75,
+            1.5, 0.75,
+            -1.5, -0.75 ]
+          spine: [ 0, -0.45, 0, 0, 0.45, 0 ]
         appearance: { material: { diffuse: [ 0.5, 0.5, 0.5 ] } }

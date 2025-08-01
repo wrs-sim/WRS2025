@@ -1,0 +1,24 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+angleUnit: degree
+name: RoomTop
+rootLink: RoomRoot
+
+WALLCOLOR: &WALLCOLOR
+  material:
+    diffuseColor: [ 0.34, 0.34, 0.34 ]
+    specularColor: [ 0.34, 0.34, 0.34 ]
+    shininess: 0.12
+
+links:
+  -
+    name: RoomRoot
+    jointType: fixed
+  -
+    name: Top
+    parent: RoomRoot
+    elements:
+      type: Shape
+      #geometry: { type: Box, size: [ 3, 3, 0.05 ] }
+      geometry: { type: Box, size: [ 2.7, 3, 0.05 ] }
+      appearance: *WALLCOLOR

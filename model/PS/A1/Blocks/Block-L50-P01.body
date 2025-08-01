@@ -1,0 +1,108 @@
+format: ChoreonoidBody
+formatVersion: 1.0
+angleUnit: degree
+name: Block-L50-P01
+
+APP:
+  appearance: &APP
+    material:
+      diffuseColor: [ 0.5, 0.5, 0.5 ]
+
+APP_HANDLE:
+  appearance: &APP_HANDLE
+    material:
+      diffuseColor: [ 1.0, 0.5, 0.2 ]
+
+APP_ORANGE:
+  appearance: &APP_ORANGE
+    material:
+      diffuseColor: [ 1.0, 0.5, 0.2 ]
+
+BOX50-1: &BOX50-1
+  type: Transform
+  elements:
+    Shape: 
+      geometry: &BOX
+        type: Box
+        size: [ 0.5, 0.5, 0.5 ]
+      appearance: *APP
+    RigidBody:
+      centerOfMass: [ 0, 0, 0 ]
+      mass: 125
+      inertia: [
+        0.04166667 , 0,          0,
+        0,           0.04166667, 0,
+        0,           0,          0.04166667 ]
+
+BOX50-15: &BOX50-05
+  type: Transform
+  elements:
+    Shape: 
+      geometry: *BOX
+      appearance: *APP
+    RigidBody:
+      centerOfMass: [ 0, 0, 0 ]
+      mass: 62.5
+      inertia: [
+        0.04166667 , 0,          0,
+        0,           0.04166667, 0,
+        0,           0,          0.04166667 ]
+
+BOX50-05: &BOX50-15
+  type: Transform
+  elements:
+    Shape: 
+      geometry: *BOX
+      appearance: *APP
+    RigidBody:
+      centerOfMass: [ 0, 0, 0 ]
+      mass: 187.5
+      inertia: [
+        0.04166667 , 0,          0,
+        0,           0.04166667, 0,
+        0,           0,          0.04166667 ]
+
+OBJ: &OBJ
+  type: Transform
+  elements:
+    -
+      <<: *BOX50-1
+      translation: [ 0, 0, 0 ]
+    -
+      <<: *BOX50-1
+      translation: [ 0, 0, 0.5 ]
+    -
+      <<: *BOX50-1
+      translation: [ 0, 0, 1 ]
+    -
+      <<: *BOX50-1
+      translation: [ 0, 0.5, 1 ]
+    -
+      type: Collision
+      elements:
+        -
+          type: Shape
+          translation: [ 0.0, 0.0, 0.5 ]
+          geometry: { type: Box, size: [ 0.5, 0.5, 1.5 ]}
+        -
+          type: Shape
+          translation: [ 0.0, 0.25, 1 ]
+          geometry: { type: Box, size: [ 0.5, 1.0, 0.5 ]}
+
+links:
+  -
+    name: BASE
+    jointType: free
+    translation: [ 0, 0, 0 ]
+    elements:
+      -
+        *OBJ
+      -
+        type: Transform
+        elements:
+          -
+            type: Shape 
+            geometry:
+              type: Box
+              size: [ 0.05, 0.05, 0.75 ]
+            appearance: *APP_HANDLE

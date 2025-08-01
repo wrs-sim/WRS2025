@@ -1,7 +1,7 @@
 format: ChoreonoidBody
 format_version: 2.0
 angle_unit: degree
-name: Box1
+name: Box2
 links:
   -
     name: Root
@@ -14,7 +14,7 @@ links:
         type: Shape
         geometry:
           type: Box
-          size: [ 1.8, 0.9, 1.5]
+          size: [ 0.9, 0.9, 1.5]
 #          type: Extrusion
 #          cross_section: [
 #            -0.75, -0.75,
