@@ -13,9 +13,17 @@ The competition at the tournament is set up with the scenario of “Information 
 <img width="50%" src="./fig/wrs2025-plant2.png">
 
 #### Area 1: Lever control, Turning on the light, Opening the door
+<img width="50%" src="./fig/area1.png"> 
+
 #### Area 2: Firefighting
-#### Area 3: Running up and down stairs
+<img width="50%" src="./fig/area2.png"> 
+
+#### Area 3: Running up/down stairs and slope 
+<img width="50%" src="./fig/area3.png"> 
+
 #### Area 4: Entering ducts, tank inspections
+<img width="50%" src="./fig/area4.png"> 
+
 
 - As part of the harsh environment challenge, the following video communication noise occasionally occurs. Please operate the robot so that it functions properly, even in the presence of noise.
 	- White Noise
