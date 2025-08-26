@@ -74,6 +74,12 @@ The competition at the tournament is set up with the scenario of “Information 
 
 - The robot needs to open the door and enter the interior.
 
+### Truss field
+<img width="33%" src="./fig/door.png">
+Go through and explore the truss field with regular tetrahedrons and triangular prisms of pipes.
+This object is constructed according to the Standard Disaster Robotics Drone Challenge.
+(Ref: https://wrs.f-rei.go.jp/en/challenge2025/sdrdh.html)
+
 ### Fire extinguishing work
 #### Step 1:
 <img width="33%" src="./fig/fire1.png">
