@@ -78,7 +78,7 @@ The competition at the tournament is set up with the scenario of “Information 
 <img width="33%" src="./fig/truss.png">
 Go through and explore the truss field with regular tetrahedrons and triangular prisms of pipes.
 This object is constructed according to the Standard Disaster Robotics Drone Challenge.
-(Ref: https://wrs.f-rei.go.jp/en/challenge2025/sdrdh.html)
+(Ref: Standard Disaster Robotics Drone Challenge Competition field 3, https://wrs.f-rei.go.jp/en/challenge2025/sdrdh.html)
 
 ### Fire extinguishing work
 #### Step 1:
