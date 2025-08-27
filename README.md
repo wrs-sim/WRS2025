@@ -15,11 +15,18 @@ The competition at the tournament is set up with the scenario of “Information 
 #### Area 1: Lever control, Turning on the light, Opening the door
 <img width="50%" src="./fig/area1.png"> 
 
+##### Scenario
+You use a remote-controlled robot to explore an area where objects are scattered after a plant accident. Since the area is dark, the robot can turn on lights by operating switches to illuminate the area. It will open doors and explore small rooms. To explore the area, the robot must read as many QR codes scattered throughout the area as possible and return to the starting point within the time limit. This area is designed to measure the robot's mobility, operability, and exploration capabilities. Additionally, it is necessary to consider the possibility of limited visibility due to communication issues caused by remote operation, as well as the possibility of sudden power outages.
+
 #### Area 2: Firefighting
 <img width="50%" src="./fig/area2.png"> 
 
+##### Scenario
+You must explore this area where objects are scattered after a plant disaster. Since there is a fire in this area, the robots take out a fire hose from the fire extinguisher box and put out the fire. Gases (smoke) and liquids (water) leak from pipes in the area, so the robot can stop the leaking fluids by operating the valves. It is also necessary to read the values of the analog meters installed in the plant.To explore this area, the robot must read as many QR codes scattered throughout the area as possible and return to the starting point within the time limit. This area is constructed to measure the movement, manipulation, and search abilities of the robots. In addition, it is necessary to assume that the field of vision will be reduced due to the effects of communication in remote control and that there may be sudden power outages.
+
 #### Area 3: Running up/down stairs and slope 
 <img width="50%" src="./fig/area3.png"> 
+
 
 #### Area 4: Entering ducts, tank inspections
 <img width="50%" src="./fig/area4.png"> 
