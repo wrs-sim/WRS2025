@@ -1,7 +1,7 @@
 format: ChoreonoidBody
 format_version: 2.0
 angle_unit: degree
-name: catwalk2
+name: catwalk3
 
 CATWALK_TEXTURE_FILE: &CATWALK_TEXTURE_FILE "resource/MetalSteelTexturedWhite.jpg"
 
@@ -30,9 +30,11 @@ links:
             #scale: [ 7, 1 ]
       -
         type: Shape
-        geometry: { type: Box, size: [ 4.8, 1.8, 0.02 ] }
+        #geometry: { type: Box, size: [ 4.8, 1.8, 0.02 ] }
+        geometry: { type: Box, size: [ 5.8, 1.8, 0.02 ] }
         appearance: { material: { diffuseColor: [ 0, 0, 1 ] } }
-        translation: [2.6, -4.1, -0.02]
+        #translation: [2.6, -4.1, -0.02]
+        translation: [2.1, -4.1, -0.02]
         appearance: *CATWALK_APP
 ##      -
 ##        type: Shape
@@ -57,10 +59,12 @@ links:
 
       -
         type: Shape
-        geometry: { type: Box, size: [ 3.0, 1.8, 0.02 ] }
+        #geometry: { type: Box, size: [ 3.0, 1.8, 0.02 ] }
+        geometry: { type: Box, size: [ 4.0, 1.8, 0.02 ] }
         appearance: { material: { diffuseColor: [ 0, 0, 1 ] } }
         rotation: [0,0,1,90]
-        translation: [ -4.1, 1.7, -0.02]
+        #translation: [ -4.1, 1.7, -0.02]
+        translation: [ -4.1, 1.2, -0.02]
         appearance: *CATWALK_APP
 
       -
