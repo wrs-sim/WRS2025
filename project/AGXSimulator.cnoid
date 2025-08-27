@@ -13,7 +13,7 @@ items:
       data:
         time_step: 0.005
         realtime_sync_mode: compensatory
-        recording: full
+        recording: off
         time_range_mode: unlimited
         time_length: 180
         is_active_control_time_range_mode: false
@@ -99,21 +99,22 @@ views:
     class: SceneView
     mounted: true
     state:
-      editMode: false
-      viewpointOperationMode: thirdPerson
+      operation_mode: view
+      viewpoint_operation_mode: third_person
+      focus_position: [ 0, 0, 0 ]
       visible_polygon_elements: [ face ]
       highlighting: false
-      collisionLines: false
+      collision_lines: false
       cameras:
         -
           camera: [ System, Perspective ]
-          isCurrent: true
+          is_current: true
           eye: [ 3, 1.5, 1.2 ]
           direction: [ -0.880451, -0.440225, -0.17609 ]
           up: [ -0.1575, -0.0787495, 0.984374 ]
         -
           camera: [ System, Orthographic ]
-          orthoHeight: 20
+          ortho_height: 20
       lighting_mode: normal
       culling_mode: enabled
       shading_mode: smooth
@@ -235,17 +236,17 @@ viewAreas:
     contents:
       type: splitter
       orientation: horizontal
-      sizes: [ 1401, 445 ]
+      sizes: [ 1885, 599 ]
       children:
         -
           type: splitter
           orientation: horizontal
-          sizes: [ 362, 1035 ]
+          sizes: [ 487, 1394 ]
           children:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 504, 504 ]
+              sizes: [ 718, 717 ]
               children:
                 -
                   type: pane
@@ -257,7 +258,7 @@ viewAreas:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 757, 251 ]
+              sizes: [ 1078, 357 ]
               children:
                 -
                   type: pane
@@ -269,7 +270,7 @@ viewAreas:
         -
           type: splitter
           orientation: vertical
-          sizes: [ 222, 786 ]
+          sizes: [ 316, 1119 ]
           children:
             -
               type: pane
@@ -277,7 +278,7 @@ viewAreas:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 306, 476 ]
+              sizes: [ 436, 679 ]
               children:
                 -
                   type: pane
