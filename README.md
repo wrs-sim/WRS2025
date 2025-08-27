@@ -123,6 +123,8 @@ Choreonoid is used as the robot simulator in the World Robot Summit 2025 Simulat
 #### AGX Dynamics installation reference
 Before constructing the WRS2025 environmental specifications for Choreonoid, please install this software.
 - https://choreonoid.org/en/documents/latest/agxdynamics/install/install-agx-ubuntu.html
+- Movie for installation
+    [![](https://img.youtube.com/vi/SxmwYl_gPEY/0.jpg)](https://youtu.be/SxmwYl_gPEY) 
 
 #### HAIROWorldPlugin installation reference
 Please obtain this software before building Choreonoid's WRS2025 environment specification.
