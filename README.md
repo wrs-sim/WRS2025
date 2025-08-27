@@ -124,7 +124,8 @@ Choreonoid is used as the robot simulator in the World Robot Summit 2025 Simulat
 Before constructing the WRS2025 environmental specifications for Choreonoid, please install this software.
 - https://choreonoid.org/en/documents/latest/agxdynamics/install/install-agx-ubuntu.html
 - Movie for installation
-    [![](https://img.youtube.com/vi/SxmwYl_gPEY/0.jpg)](https://youtu.be/SxmwYl_gPEY) 
+
+[![](https://img.youtube.com/vi/SxmwYl_gPEY/0.jpg)](https://youtu.be/SxmwYl_gPEY) 
 
 #### HAIROWorldPlugin installation reference
 Please obtain this software before building Choreonoid's WRS2025 environment specification.
@@ -200,6 +201,11 @@ $ sudo apt install python3-colcon-common-extensions
 $ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 $ source ~/.bashrc
 ```
+
+- Movie for installation
+
+[![](https://img.youtube.com/vi/pLnRYuRHtV0/0.jpg)](https://youtu.be/pLnRYuRHtV0) 
+
 
 2. Install Choreonoid
 ```bash
