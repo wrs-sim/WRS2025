@@ -123,7 +123,7 @@ Choreonoid is used as the robot simulator in the World Robot Summit 2025 Simulat
 #### AGX Dynamics installation reference
 Before constructing the WRS2025 environmental specifications for Choreonoid, please install this software.
 - https://choreonoid.org/en/documents/latest/agxdynamics/install/install-agx-ubuntu.html
-- Movie for installation
+- Movie for installation (Click on the image to view simulation on youtube)
 
 [![](https://img.youtube.com/vi/SxmwYl_gPEY/0.jpg)](https://youtu.be/SxmwYl_gPEY) 
 
@@ -202,7 +202,7 @@ $ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
-- Movie for installation
+- Movie for installation (Click on the image to view simulation on youtube)
 
 [![](https://img.youtube.com/vi/pLnRYuRHtV0/0.jpg)](https://youtu.be/pLnRYuRHtV0) 
 
@@ -231,6 +231,11 @@ $ colcon build --symlink-install --cmake-args -DBUILD_AGX_DYNAMICS_PLUGIN=ON -DB
 $ source install/setup.bash
 $ ros2 run choreonoid_ros choreonoid
 ```
+
+- Movie for installation (Click on the image to view simulation on youtube)
+
+[![](https://img.youtube.com/vi/2oGcO8FwFng/0.jpg)](https://youtu.be/2oGcO8FwFng) 
+
 
 ## Practice Environment
 Once the above installation is successful, you will be able to set up a practice environment for WRS2025.
