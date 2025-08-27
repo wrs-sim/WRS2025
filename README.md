@@ -7,7 +7,7 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We have uploaded a simplified course that will allow you to perform each task in the future.
 
-## New information（Update: August 26th, 2025）
+## New information（Update: August 27th, 2025）
 - The simulation environment consisted of four areas, Area 1 to Area 4, as shown below. The competition was divided into each area.
 <img width="50%" src="./fig/wrs2025-plant.png"> 
 <img width="50%" src="./fig/wrs2025-plant2.png">
@@ -27,10 +27,17 @@ You must explore this area where objects are scattered after a plant disaster. S
 #### Area 3: Running up/down stairs and slope 
 <img width="50%" src="./fig/area3.png"> 
 
+##### Scenario
+You must explore this area where objects are scattered after a plant disaster.
+Gases (smoke) and liquids (water) leak from pipes in the area, so the robot can stop the leaking fluids by operating the valves. 
+The robots must climb the stairs or ramp, turn the valve on the second floor, and stop the leak.
+It is also necessary to read the values of the analog meters installed in the plant. To explore this area, the robot must read as many QR codes scattered throughout the area as possible and return to the starting point within the time limit. This area is constructed to measure the movement, manipulation, and search abilities of the robots. In addition, it is necessary to assume that the field of vision will be reduced due to the effects of communication in remote control and that there may be sudden power outages.
 
 #### Area 4: Entering ducts, tank inspections
 <img width="50%" src="./fig/area4.png"> 
 
+##### Scenario
+You use the robot, which is UAV, to enter the duct and investigate the tank connected to the duct. The passage connected to the duct is narrow and maze-like, requiring careful exploration to avoid getting lost. On the other hand, Gases (smoke) and liquids (water) leak from pipes in the area, so the UGV can stop the leaking fluids by operating the valves. In order to explore the area, you must read as many QR codes as possible, which are scattered around the area, and move the robot from the start area to the goal area within the time limit. This area is constructed to measure the movement, manipulation and search abilities of the robots. In addition, it is necessary to assume that the field of vision will be reduced due to the effects of communication in remote control, and that there may be sudden power outages.
 
 - As part of the harsh environment challenge, the following video communication noise occasionally occurs. Please operate the robot so that it functions properly, even in the presence of noise.
 	- White Noise
@@ -38,7 +45,6 @@ You must explore this area where objects are scattered after a plant disaster. S
  
 	- Block Noise
 	<img width="50%" src="./fig/noise2.png">
-
 
 ### Ramp
 <img width="33%" src="./fig/ramp.png">
