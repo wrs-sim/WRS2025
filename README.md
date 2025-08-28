@@ -7,7 +7,7 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We have uploaded a simplified course that will allow you to perform each task in the future.
 
-## New information（Update: August 27th, 2025）
+## New information（Update: August 28th, 2025）
 - The simulation environment consisted of four areas, Area 1 to Area 4, as shown below. The competition was divided into each area.
 <img width="50%" src="./fig/wrs2025-plant.png"> 
 <img width="50%" src="./fig/wrs2025-plant2.png">
@@ -15,17 +15,30 @@ The competition at the tournament is set up with the scenario of “Information 
 #### Area 1: Lever control, Turning on the light, Opening the door
 <img width="50%" src="./fig/area1.png"> 
 
+- The area around the start (Click on the image to view simulation on youtube)
+
+[![](https://img.youtube.com/vi/-OKpuWwvyP4/0.jpg)](https://youtu.be/-OKpuWwvyP4) 
+
 ##### Scenario
 You use a remote-controlled robot to explore an area where objects are scattered after a plant accident. Since the area is dark, the robot can turn on lights by operating switches to illuminate the area. It will open doors and explore small rooms. To explore the area, the robot must read as many QR codes scattered throughout the area as possible and return to the starting point within the time limit. This area is designed to measure the robot's mobility, operability, and exploration capabilities. Additionally, it is necessary to consider the possibility of limited visibility due to communication issues caused by remote operation, as well as the possibility of sudden power outages.
 
 #### Area 2: Firefighting
 <img width="50%" src="./fig/area2.png"> 
 
+- The area around the start (Click on the image to view simulation on youtube)
+
+[![](https://img.youtube.com/vi/RqlraRtlhWA/0.jpg)](https://youtu.be/RqlraRtlhWA) 
+
+
 ##### Scenario
 You must explore this area where objects are scattered after a plant disaster. Since there is a fire in this area, the robots take out a fire hose from the fire extinguisher box and put out the fire. Gases (smoke) and liquids (water) leak from pipes in the area, so the robot can stop the leaking fluids by operating the valves. It is also necessary to read the values of the analog meters installed in the plant.To explore this area, the robot must read as many QR codes scattered throughout the area as possible and return to the starting point within the time limit. This area is constructed to measure the movement, manipulation, and search abilities of the robots. In addition, it is necessary to assume that the field of vision will be reduced due to the effects of communication in remote control and that there may be sudden power outages.
 
 #### Area 3: Running up/down stairs and slope 
 <img width="50%" src="./fig/area3.png"> 
+
+- The area around the start (Click on the image to view simulation on youtube)
+
+[![](https://img.youtube.com/vi/EvLPmafm8BM/0.jpg)](https://youtu.be/EvLPmafm8BM) 
 
 ##### Scenario
 You must explore this area where objects are scattered after a plant disaster.
@@ -35,6 +48,10 @@ It is also necessary to read the values of the analog meters installed in the pl
 
 #### Area 4: Entering ducts, tank inspections
 <img width="50%" src="./fig/area4.png"> 
+
+- The area around the start (Click on the image to view simulation on youtube)
+
+[![](https://img.youtube.com/vi/f4MrvI26BAk/0.jpg)](https://youtu.be/f4MrvI26BAk) 
 
 ##### Scenario
 You use the robot, which is UAV, to enter the duct and investigate the tank connected to the duct. The passage connected to the duct is narrow and maze-like, requiring careful exploration to avoid getting lost. On the other hand, Gases (smoke) and liquids (water) leak from pipes in the area, so the UGV can stop the leaking fluids by operating the valves. In order to explore the area, you must read as many QR codes as possible, which are scattered around the area, and move the robot from the start area to the goal area within the time limit. This area is constructed to measure the movement, manipulation and search abilities of the robots. In addition, it is necessary to assume that the field of vision will be reduced due to the effects of communication in remote control, and that there may be sudden power outages.
