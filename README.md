@@ -279,6 +279,7 @@ $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/regist
 
 3. When you launch Choreonoid, if it displays “Driver Profile: NVIDIA Corporation ○○” as shown below, Choreonoid will use the NVIDIA GPU. 
 <img width="66%" src="./fig/gpu-choreonoid.png">
+
 - However, when running on a laptop, please perform Choreonoid simulations while connected to a power source (simulations will run slowly if not connected).
 
 ## Pre-check list for competitors
