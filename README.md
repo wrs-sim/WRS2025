@@ -275,10 +275,10 @@ $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/regist
 ### To process Choreonoid on a Nvidia GPU
 1. Select Prime Profiles in "NVIDIA settings".
 2. For "Select the GPU you would like to use", select "NVIDIA (Performance Mode)"
-<img width="33%" src="./fig/gpu-setting.png">
+<img width="66%" src="./fig/gpu-setting.png">
 
 3. When you launch Choreonoid, if it displays “Driver Profile: NVIDIA Corporation ○○” as shown below, Choreonoid will use the NVIDIA GPU. 
-<img width="33%" src="./fig/gpu-choreonoid.png">
+<img width="66%" src="./fig/gpu-choreonoid.png">
 - However, when running on a laptop, please perform Choreonoid simulations while connected to a power source (simulations will run slowly if not connected).
 
 ## Pre-check list for competitors
