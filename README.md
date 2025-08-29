@@ -298,7 +298,9 @@ $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/regist
 
 	[![](https://img.youtube.com/vi/8PlOL2M9Hno/0.jpg)](https://youtu.be/8PlOL2M9Hno) 
 
-### To process Choreonoid on a Nvidia GPU
+- Note: **Do not use Wi-Fi communication while using this connection method. Choreonoid simulation will slow down while Wi-Fi communication is in use.**
+  
+### To process Choreonoid on a Nvidia GPU（Update: August 28th, 2025）
 1. Select Prime Profiles in "NVIDIA settings".
 2. For "Select the GPU you would like to use", select "NVIDIA (Performance Mode)"
 <img width="66%" src="./fig/gpu-setting.png">
