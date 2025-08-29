@@ -7,7 +7,7 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We have uploaded a simplified course that will allow you to perform each task in the future.
 
-## New information（Update: August 28th, 2025）
+## New information（Update: August 29th, 2025）
 - The simulation environment consisted of four areas, Area 1 to Area 4, as shown below. The competition was divided into each area.
 <img width="50%" src="./fig/wrs2025-plant.png"> 
 <img width="50%" src="./fig/wrs2025-plant2.png">
@@ -282,12 +282,21 @@ $ source install/setup.bash
 $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/registration/registration_m3.yaml --wrs-util M3
 ```
 
-## Important Notice
+## Important Notice（Update: August 29th, 2025）
 - Robot simulation will be performed on computers provided by the organizers
 	- The specs of the organizer's computer: https://www.amazon.co.jp/dp/B0BTM9SYSX?language=en_US
 
 - Please obtain the simulation results via network communication and operate the robots on your own computers. The computers provided by the organizers will serve as servers, and the computers provided by the competitors will serve as clients.
 	- The mobile robot is in a simulation on the organizer's computers and connected to the competitor's computers via the network. This relationship is similar to a real mobile robot connected to a host computers via a network. If a team wishes to use its unique robot or functions in the match, it will submit the robot model and program to the organizers, who will implement it on the competition simulation computers.
+
+- Example movie for configuration (Click on the image to view simulation on youtube)
+	- Connection and IP setting
+	
+ 	[![](https://img.youtube.com/vi/xuybtku4VAU/0.jpg)](https://youtu.be/xuybtku4VAU) 
+
+	- Remote Robot Control via ROS2 Communication
+
+	[![](https://img.youtube.com/vi/8PlOL2M9Hno/0.jpg)](https://youtu.be/8PlOL2M9Hno) 
 
 ### To process Choreonoid on a Nvidia GPU
 1. Select Prime Profiles in "NVIDIA settings".
