@@ -47,8 +47,6 @@ You must explore this area where objects are scattered after a plant disaster. S
 <img width="25%" src="./fig/meter1.png"><img width="25%" src="./fig/qr.png">
 
 
-
-
 #### Area 3: Running up/down stairs and ramp 
 <img width="50%" src="./fig/area3.png"> 
 
@@ -69,8 +67,6 @@ It is also necessary to read the values of the analog meters installed in the pl
 
 <img width="25%" src="./fig/valve1.png"><img width="25%" src="./fig/meter1.png"><img width="25%" src="./fig/qr.png">
 
-
-
 #### Area 4: Entering ducts, tank inspections
 <img width="50%" src="./fig/area4.png"> 
 
@@ -86,8 +82,8 @@ You use the robot, which is UAV, to enter the duct and investigate the tank conn
 
 <img width="25%" src="./fig/switch1.png"><img width="25%" src="./fig/duct1.png"><img width="25%" src="./fig/valve1.png"><img width="25%" src="./fig/meter1.png"><img width="25%" src="./fig/qr.png">
 
+#### About video noise
 
-### About video noise
 - As part of the harsh environment challenge, the following video communication noise occasionally occurs. Please operate the robot so that it functions properly, even in the presence of noise.
 	- White Noise
 	<img width="50%" src="./fig/noise1.png">
