@@ -48,12 +48,6 @@
 
 - The robot needs to open the door and enter the interior.
 
-### QR code
-<img width="33%" src="./fig/qr1.png">
-
-- You explore the entire area and search for the QR codes as possible. The QR codes are inside the tubes..
-
-
 ### Truss field
 <img width="33%" src="./fig/truss.png">
 Go through and explore the truss field with regular tetrahedrons and triangular prisms of pipes.
