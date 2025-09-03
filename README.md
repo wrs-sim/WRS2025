@@ -44,7 +44,7 @@ You must explore this area where objects are scattered after a plant disaster. S
 
 <img width="25%" src="./fig/switch1.png"><img width="25%" src="./fig/fire1.png"><img width="25%" src="./fig/valve1.png">
 
-<img width="25%" src="./fig/meter1.png"><img width="25%" src="./fig/obstacle-robot.png"<img width="25%" src="./fig/qr.png">
+<img width="25%" src="./fig/meter1.png"><img width="25%" src="./fig/obstacle-robot.png"><img width="25%" src="./fig/qr.png">
 
 
 #### Area 3: Running up/down stairs and ramp 
