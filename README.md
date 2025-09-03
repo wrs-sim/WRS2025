@@ -7,7 +7,7 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We have uploaded a simplified course that will allow you to perform each task in the future.
 
-## New information（Update: August 29th, 2025）
+## New information（Update: September 3rd, 2025）
 - The simulation environment consisted of four areas, Area 1 to Area 4, as shown below. The competition was divided into each area.
 <img width="50%" src="./fig/wrs2025-plant.png"> 
 <img width="50%" src="./fig/wrs2025-plant2.png">
@@ -40,11 +40,11 @@ You use a remote-controlled robot to explore an area where objects are scattered
 You must explore this area where objects are scattered after a plant disaster. Since there is a fire in this area, the robots take out a fire hose from the fire extinguisher box and put out the fire. Gases (smoke) and liquids (water) leak from pipes in the area, so the robot can stop the leaking fluids by operating the valves. It is also necessary to read the values of the analog meters installed in the plant. To explore this area, the robot must read as many QR codes scattered throughout the area as possible and return to the starting point within the time limit. This area is constructed to measure the movement, manipulation, and search abilities of the robots. In addition, it is necessary to assume that the field of vision will be reduced due to the effects of communication in remote control and that there may be sudden power outages.
 
 ##### Considering component
-- Switch, Fire extinguisher box, Valve, Meter, QR code, and ･･･
+- Switch, Fire extinguisher box, Valve, Meter, Broken robot, QR code, and ･･･
 
 <img width="25%" src="./fig/switch1.png"><img width="25%" src="./fig/fire1.png"><img width="25%" src="./fig/valve1.png">
 
-<img width="25%" src="./fig/meter1.png"><img width="25%" src="./fig/qr.png">
+<img width="25%" src="./fig/meter1.png"><img width="25%" src="./fig/obstacle-robot.png"<img width="25%" src="./fig/qr.png">
 
 
 #### Area 3: Running up/down stairs and ramp 
