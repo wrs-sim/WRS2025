@@ -1,4 +1,4 @@
-### Plant component
+### Plant component (Update: September 3rd, 2025)
 ### Ramp
 <img width="33%" src="./fig/ramp.png">
 
@@ -53,6 +53,10 @@
 Go through and explore the truss field with regular tetrahedrons and triangular prisms of pipes.
 This object is constructed according to the Standard Disaster Robotics Drone Challenge.
 (Ref: Standard Disaster Robotics Drone Challenge Competition field 3, https://wrs.f-rei.go.jp/en/challenge2025/sdrdh.html)
+
+### Broken robot
+<img width="33%" src="./fig/obstacle-robot.png">
+- The UGV needs to move the broken robot that stopped moving.<br>
 
 ### Fire extinguishing work
 #### Step 1:
