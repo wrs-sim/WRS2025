@@ -14,12 +14,12 @@ links:
   -
     name: RoomRoot
     jointType: fixed
-  -
-    type: SubBody
-    #uri: subbody/Door.body
-    uri: subbody/DoorWithRock.body
-    parent: RoomRoot
-    translation: [ 1.5, 0, 0 ]
+#  -
+#    type: SubBody
+#    #uri: subbody/Door.body
+#    uri: subbody/DoorWithRock.body
+#    parent: RoomRoot
+#    translation: [ 1.5, 0, 0 ]
   -
     name: Wall1
     parent: RoomRoot
@@ -71,14 +71,13 @@ links:
 
 # ---------- #
 
-  -
-    type: SubBody
-    prefix: R2_
-    jointIdOffset: 10
-    uri: subbody/Door.body
-    #uri: subbody/DoorWithRock.body
-    parent: RoomRoot
-    translation: [ 1.5, 2.7, 0 ]
+#  -
+#    type: SubBody
+#    prefix: R2_
+#    jointIdOffset: 10
+#    uri: subbody/Door.body
+#    parent: RoomRoot
+#    translation: [ 1.5, 2.7, 0 ]
   -
     name: Wall2-1
     parent: RoomRoot
