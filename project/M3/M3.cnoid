@@ -10,7 +10,6 @@ items:
       name: "Floor"
       plugin: Body
       class: BodyItem
-      is_selected: true
       is_checked: true
       data:
         file: "${SHARE}/WRS2025/model/PS/Common/trial/large_floor.body"
@@ -35,14 +34,12 @@ items:
       name: "A1"
       plugin: Base
       class: FolderItem
-      is_selected: true
       children:
         -
           id: 3
           name: "storage"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/storage/storage.body"
@@ -69,7 +66,6 @@ items:
               name: "StorageController"
               plugin: Body
               class: SimpleControllerItem
-              is_selected: true
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
@@ -82,7 +78,6 @@ items:
           name: "Room"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/Room.body"
@@ -108,7 +103,6 @@ items:
           name: "Room"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/Room.body"
@@ -134,7 +128,6 @@ items:
           name: "Room2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/Room2.body"
@@ -160,7 +153,6 @@ items:
           name: "Room2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/Room2.body"
@@ -186,7 +178,6 @@ items:
           name: "PullOutBaseB"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/BaseB.body"
@@ -211,7 +202,6 @@ items:
           name: "PullOutBaseB"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/BaseB.body"
@@ -236,7 +226,6 @@ items:
           name: "Rod-I-25-1.0"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/Rod-I-25-1.0.body"
@@ -261,7 +250,6 @@ items:
           name: "Rod-I-25-1.0"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A1/Rod-I-25-1.0.body"
@@ -286,7 +274,6 @@ items:
           name: "Debris1"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "../../../WRS2024PRE/model/M1/Debris1.body"
@@ -311,14 +298,12 @@ items:
           name: "Fence"
           plugin: Base
           class: FolderItem
-          is_selected: true
           children:
             -
               id: 15
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -343,7 +328,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -368,7 +352,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -393,7 +376,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -418,7 +400,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -443,7 +424,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -468,7 +448,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -493,7 +472,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -518,7 +496,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -543,7 +520,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -568,7 +544,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -593,7 +568,6 @@ items:
               name: "Fence"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence.body"
@@ -618,7 +592,6 @@ items:
               name: "FenceDoor"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A1/subbody/fence-door.body"
@@ -644,7 +617,6 @@ items:
           name: "BreakerBox"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/misc/breaker_box.body"
@@ -671,7 +643,6 @@ items:
               name: "BreakerBoxController"
               plugin: Body
               class: SimpleControllerItem
-              is_selected: true
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
@@ -684,7 +655,6 @@ items:
           name: "Tetrahedron02-2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "../../model/PS/A1/tetra/TES-02-2m.body"
@@ -709,7 +679,6 @@ items:
           name: "Tetrahedron01-2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "../../model/PS/A1/tetra/TES-01-2m.body"
@@ -734,7 +703,6 @@ items:
           name: "Tetrahedron01-2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "../../model/PS/A1/tetra/TES-00-2m.body"
@@ -759,7 +727,6 @@ items:
           name: "RoomMazeP"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "../../model/PS/A1/RoomMazeP.body"
@@ -784,14 +751,12 @@ items:
       name: "A2"
       plugin: Base
       class: FolderItem
-      is_selected: true
       children:
         -
           id: 35
           name: "Fire"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2018/model/Fire.body"
@@ -818,7 +783,6 @@ items:
               name: "FireController"
               plugin: Body
               class: SimpleControllerItem
-              is_selected: true
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
@@ -831,7 +795,6 @@ items:
           name: "FireCabinet"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2018/model/FullFeaturedFireCabinet.body"
@@ -858,7 +821,6 @@ items:
               name: "HoseNozzleController"
               plugin: Body
               class: SimpleControllerItem
-              is_selected: true
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
@@ -871,7 +833,6 @@ items:
           name: "FireCircle"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2018/model/T5_NoEntryAreaCircle.body"
@@ -891,19 +852,42 @@ items:
             selfCollisionDetection: false
             lock_location: false
             scene_sensitive: true
+        -
+          id: 40
+          name: "crawler1"
+          plugin: Body
+          class: BodyItem
+          is_checked: true
+          data:
+            file: "${SHARE}/WRS2025/model/PS/A2/crawler1.body"
+            format: CHOREONOID-BODY
+            rootPosition: [ -5.1, 9, 0.2 ]
+            rootAttitude: [
+              1, 0, 0,
+              0, 1, 0,
+              0, 0, 1 ]
+            jointDisplacements: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+            initialRootPosition: [ -5.1, 9, 0.2 ]
+            initialRootAttitude: [
+              1, 0, 0,
+              0, 1, 0,
+              0, 0, 1 ]
+            fix_root: false
+            collisionDetection: true
+            selfCollisionDetection: false
+            lock_location: false
+            scene_sensitive: true
     -
-      id: 40
+      id: 41
       name: "A3"
       plugin: Base
       class: FolderItem
-      is_selected: true
       children:
         -
-          id: 41
+          id: 42
           name: "SmallTank"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/small_tank.body"
@@ -926,11 +910,10 @@ items:
             scene_sensitive: true
           children:
             -
-              id: 42
+              id: 43
               name: "ValveController"
               plugin: Body
               class: SimpleControllerItem
-              is_selected: true
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
@@ -939,11 +922,10 @@ items:
                 reloading: false
                 export_symbols: false
         -
-          id: 43
+          id: 44
           name: "SmokeLeakedLine"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/smoke_leaked_line.body"
@@ -966,11 +948,10 @@ items:
             scene_sensitive: true
           children:
             -
-              id: 44
+              id: 45
               name: "ValveController"
               plugin: Body
               class: SimpleControllerItem
-              is_selected: true
               data:
                 isNoDelayMode: false
                 controllerOptions: ""
@@ -979,11 +960,10 @@ items:
                 reloading: false
                 export_symbols: false
         -
-          id: 45
+          id: 46
           name: "catwalk"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A3/catwalk_half.body"
@@ -1005,11 +985,10 @@ items:
             scene_sensitive: true
           children:
             -
-              id: 46
+              id: 47
               name: "stairsA3"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A3/stairsA3.body"
@@ -1031,11 +1010,10 @@ items:
                 scene_sensitive: true
               children:
                 -
-                  id: 47
+                  id: 48
                   name: "step"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/stairsA3-step.body"
@@ -1056,11 +1034,10 @@ items:
                     lock_location: false
                     scene_sensitive: true
                 -
-                  id: 48
+                  id: 49
                   name: "stairsA3"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/stairsA3.body"
@@ -1081,11 +1058,10 @@ items:
                     lock_location: false
                     scene_sensitive: true
                 -
-                  id: 49
+                  id: 50
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail.body"
@@ -1106,11 +1082,10 @@ items:
                     lock_location: false
                     scene_sensitive: true
                 -
-                  id: 50
+                  id: 51
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail.body"
@@ -1131,11 +1106,10 @@ items:
                     lock_location: false
                     scene_sensitive: true
         -
-          id: 51
+          id: 52
           name: "Slope"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/A3/Slope2.body"
@@ -1157,11 +1131,10 @@ items:
             scene_sensitive: true
           children:
             -
-              id: 52
+              id: 53
               name: "Handrails"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail2.body"
@@ -1183,11 +1156,10 @@ items:
                 scene_sensitive: true
               children:
                 -
-                  id: 53
+                  id: 54
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail2.body"
@@ -1208,11 +1180,10 @@ items:
                     lock_location: false
                     scene_sensitive: true
             -
-              id: 54
+              id: 55
               name: "Handrails"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail2.body"
@@ -1233,11 +1204,10 @@ items:
                 lock_location: false
                 scene_sensitive: true
             -
-              id: 55
+              id: 56
               name: "Handrails"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail3.body"
@@ -1245,8 +1215,8 @@ items:
                 rootPosition: [ -6.4, -7.7, 1.5 ]
                 rootAttitude: [
                   2.22044605e-16, 1, 0,
-                  -1, 2.22044605e-16, -0,
-                  -0, 0, 1 ]
+                  -1, 2.22044605e-16, 0,
+                  0, 0, 1 ]
                 initialRootPosition: [ -6.4, -7.7, 1.5 ]
                 initialRootAttitude: [
                   2.22044605e-16, 1, 0,
@@ -1259,11 +1229,10 @@ items:
                 scene_sensitive: true
               children:
                 -
-                  id: 56
+                  id: 57
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail3.body"
@@ -1284,11 +1253,10 @@ items:
                     lock_location: false
                     scene_sensitive: true
                 -
-                  id: 57
+                  id: 58
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail3.body"
@@ -1309,11 +1277,10 @@ items:
                     lock_location: false
                     scene_sensitive: true
                 -
-                  id: 58
+                  id: 59
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail3.body"
@@ -1334,61 +1301,58 @@ items:
                     lock_location: false
                     scene_sensitive: true
                 -
-                  id: 59
+                  id: 60
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail3.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -8.2, -3.8, 3 ]
                     rootAttitude: [
-                      1, 6.12323401e-17, -0,
+                      1, 6.12323401e-17, 0,
                       -6.12323401e-17, 1, 0,
                       0, 0, 1 ]
                     initialRootPosition: [ -8.2, -3.8, 3 ]
                     initialRootAttitude: [
-                      1, 6.12323401e-17, -0,
-                      -6.12323401e-17, 1, 0,
-                      0, 0, 1 ]
+                      1, 6.12323401e-17, 0,
+                      -6.12323401e-17, 1, -0,
+                      -0, 0, 1 ]
                     fix_root: true
                     collisionDetection: true
                     selfCollisionDetection: false
                     lock_location: false
                     scene_sensitive: true
                 -
-                  id: 60
+                  id: 61
                   name: "Handrails"
                   plugin: Body
                   class: BodyItem
-                  is_selected: true
                   is_checked: true
                   data:
                     file: "${SHARE}/WRS2025/model/PS/A3/subbody/handrail3.body"
                     format: CHOREONOID-BODY
                     rootPosition: [ -7.3, -3.8, 3 ]
                     rootAttitude: [
-                      6.123234e-17, 1, -0,
+                      6.123234e-17, 1, 0,
                       -1, 6.123234e-17, 0,
                       0, 0, 1 ]
                     initialRootPosition: [ -7.3, -3.8, 3 ]
                     initialRootAttitude: [
-                      2.22044605e-16, 1, -0,
-                      -1, 2.22044605e-16, 0,
-                      0, 0, 1 ]
+                      2.22044605e-16, 1, 0,
+                      -1, 2.22044605e-16, -0,
+                      -0, 0, 1 ]
                     fix_root: true
                     collisionDetection: true
                     selfCollisionDetection: false
                     lock_location: false
                     scene_sensitive: true
             -
-              id: 61
+              id: 62
               name: "Slope"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "${SHARE}/WRS2025/model/PS/A3/Slope2.body"
@@ -1409,11 +1373,10 @@ items:
                 lock_location: false
                 scene_sensitive: true
             -
-              id: 62
+              id: 63
               name: "Box1"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "../../model/PS/A3/Box1.body"
@@ -1421,8 +1384,8 @@ items:
                 rootPosition: [ -7.3, -8.15, 0.75 ]
                 rootAttitude: [
                   1, 2.22044605e-16, 0,
-                  -2.22044605e-16, 1, -0,
-                  -0, 0, 1 ]
+                  -2.22044605e-16, 1, 0,
+                  0, 0, 1 ]
                 initialRootPosition: [ -7.3, -8.15, 0.75 ]
                 initialRootAttitude: [
                   1, 2.22044605e-16, 0,
@@ -1434,11 +1397,10 @@ items:
                 lock_location: false
                 scene_sensitive: true
             -
-              id: 63
+              id: 64
               name: "Box1"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "../../model/PS/A3/Box1.body"
@@ -1459,11 +1421,10 @@ items:
                 lock_location: false
                 scene_sensitive: true
             -
-              id: 64
+              id: 65
               name: "Box1"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "../../model/PS/A3/Box1.body"
@@ -1484,11 +1445,10 @@ items:
                 lock_location: false
                 scene_sensitive: true
             -
-              id: 65
+              id: 66
               name: "Box1"
               plugin: Body
               class: BodyItem
-              is_selected: true
               is_checked: true
               data:
                 file: "../../model/PS/A3/Box2.body"
@@ -1496,7 +1456,7 @@ items:
                 rootPosition: [ -7.75, -4.25, 2.25 ]
                 rootAttitude: [
                   2.83276945e-16, -1, 0,
-                  1, 2.83276945e-16, -0,
+                  1, 2.83276945e-16, 0,
                   0, 0, 1 ]
                 initialRootPosition: [ -7.75, -4.25, 2.25 ]
                 initialRootAttitude: [
@@ -1509,18 +1469,16 @@ items:
                 lock_location: false
                 scene_sensitive: true
     -
-      id: 66
+      id: 67
       name: "A4"
       plugin: Base
       class: FolderItem
-      is_selected: true
       children:
         -
-          id: 67
+          id: 68
           name: "pipe1"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/trial/pipe1.body"
@@ -1541,11 +1499,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 68
+          id: 69
           name: "pipe2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/trial/pipe2.body"
@@ -1566,11 +1523,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 69
+          id: 70
           name: "pipe2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/trial/pipe2.body"
@@ -1591,11 +1547,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 70
+          id: 71
           name: "pipe2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/trial/pipe2.body"
@@ -1616,11 +1571,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 71
+          id: 72
           name: "pipe2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/Common/trial/pipe2.body"
@@ -1641,18 +1595,16 @@ items:
             lock_location: false
             scene_sensitive: true
     -
-      id: 72
+      id: 73
       name: "QR"
       plugin: Base
       class: FolderItem
-      is_selected: true
       children:
         -
-          id: 73
+          id: 74
           name: "QRA1-1"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/QR/Trial/A1/QRA1-1.body"
@@ -1673,11 +1625,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 74
+          id: 75
           name: "QRA1-2"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/QR/Trial/A1/QRA1-2.body"
@@ -1698,11 +1649,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 75
+          id: 76
           name: "QRA1-3"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/QR/Trial/A1/QRA1-3.body"
@@ -1723,11 +1673,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 76
+          id: 77
           name: "QRA1-4"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/QR/Trial/A1/QRA1-4.body"
@@ -1748,11 +1697,10 @@ items:
             lock_location: false
             scene_sensitive: true
         -
-          id: 77
+          id: 78
           name: "QRA1-5"
           plugin: Body
           class: BodyItem
-          is_selected: true
           is_checked: true
           data:
             file: "${SHARE}/WRS2025/model/PS/QR/Trial/A1/QRA1-5.body"
@@ -1773,11 +1721,10 @@ items:
             lock_location: false
             scene_sensitive: true
     -
-      id: 78
+      id: 79
       name: "CFDCollider"
       plugin: SimpleCollider
       class: MultiColliderItem
-      is_selected: true
       is_checked: true
       data:
         translation: [ 0, 0, 0 ]
@@ -1813,11 +1760,10 @@ items:
         mosaic_chance: 0
         kernel: 16
     -
-      id: 79
+      id: 80
       name: "VFXCollider"
       plugin: SimpleCollider
       class: MultiColliderItem
-      is_selected: true
       is_checked: true
       data:
         translation: [ 0, 0, 0 ]
@@ -1852,46 +1798,6 @@ items:
         pepper_chance: 0
         mosaic_chance: 0
         kernel: 16
-    -
-      id: 80
-      name: "TCCollider"
-      plugin: SimpleCollider
-      class: MultiColliderItem
-      is_selected: true
-      is_checked: true
-      data:
-        translation: [ 2, -12, 1 ]
-        rotation: [ 0, -0, 0 ]
-        size: [ 3, 3, 3 ]
-        diffuse_color: [ 1, 1, 0 ]
-        radius: 0.5
-        height: 1
-        specular_exponent: 25
-        transparency: 0.5
-        scene_type: Box
-        collider_type: TC
-        density: 0
-        viscosity: 0
-        steady_flow: [ 0, 0, 0 ]
-        inbound_delay: 0
-        inbound_rate: 0
-        inbound_loss: 1
-        outbound_delay: 0
-        outbound_rate: 0
-        outbound_loss: 0
-        source: 0.0.0.0/0
-        destination: 0.0.0.0/0
-        hsv: [ 0, 0, 0 ]
-        rgb: [ 0, 0, 0 ]
-        coef_b: 0
-        coef_d: 0
-        std_dev: 0
-        salt_amount: 0
-        salt_chance: 0
-        pepper_amount: 0
-        pepper_chance: 0
-        mosaic_chance: 0
-        kernel: 16
 views:
   -
     id: 0
@@ -1908,7 +1814,7 @@ views:
     class: ItemTreeView
     mounted: true
     state:
-      expanded: [ 10, 12, 28, 33, 40, 45, 46, 51, 52, 54, 55, 80 ]
+      expanded: [ 10, 12, 28, 33, 46, 47, 52, 53, 55, 56 ]
   -
     id: 3
     plugin: Base
@@ -1933,7 +1839,7 @@ views:
     state:
       operation_mode: view
       viewpoint_operation_mode: third_person
-      focus_position: [ -4.39423, -11.2732, -15.0068 ]
+      focus_position: [ -15.0031, -12.709, 9.16191 ]
       visible_polygon_elements: [ face ]
       highlighting: false
       collision_lines: false
@@ -1941,9 +1847,9 @@ views:
         -
           camera: [ System, Perspective ]
           is_current: true
-          eye: [ -11.9787, -3.85587, 10.197 ]
-          direction: [ 0.487682, -0.256851, -0.834382 ]
-          up: [ 0.73825, -0.388819, 0.551186 ]
+          eye: [ -19.921, -15.8722, 13.1844 ]
+          direction: [ 0.711345, 0.524382, -0.467987 ]
+          up: [ 0.376696, 0.277689, 0.883736 ]
         -
           camera: [ System, Orthographic ]
           ortho_height: 20
@@ -2225,17 +2131,17 @@ Body:
         show_cm_projection: false
         show_zmp: false
       -
-        body_item: 41
+        body_item: 40
         show_cm: false
         show_cm_projection: false
         show_zmp: false
       -
-        body_item: 43
+        body_item: 42
         show_cm: false
         show_cm_projection: false
         show_zmp: false
       -
-        body_item: 45
+        body_item: 44
         show_cm: false
         show_cm_projection: false
         show_zmp: false
@@ -2340,7 +2246,7 @@ Body:
         show_cm_projection: false
         show_zmp: false
       -
-        body_item: 67
+        body_item: 66
         show_cm: false
         show_cm_projection: false
         show_zmp: false
@@ -2365,7 +2271,7 @@ Body:
         show_cm_projection: false
         show_zmp: false
       -
-        body_item: 73
+        body_item: 72
         show_cm: false
         show_cm_projection: false
         show_zmp: false
@@ -2389,6 +2295,11 @@ Body:
         show_cm: false
         show_cm_projection: false
         show_zmp: false
+      -
+        body_item: 78
+        show_cm: false
+        show_cm_projection: false
+        show_zmp: false
   "SplineFilterDialog":
     isInputFrameRateSpecified: false
     inputFrameRate: 200
@@ -2401,17 +2312,17 @@ viewAreas:
     contents:
       type: splitter
       orientation: horizontal
-      sizes: [ 1401, 445 ]
+      sizes: [ 1404, 446 ]
       children:
         -
           type: splitter
           orientation: horizontal
-          sizes: [ 362, 1035 ]
+          sizes: [ 363, 1037 ]
           children:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 444, 444 ]
+              sizes: [ 503, 502 ]
               children:
                 -
                   type: pane
@@ -2423,7 +2334,7 @@ viewAreas:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 666, 222 ]
+              sizes: [ 754, 251 ]
               children:
                 -
                   type: pane
@@ -2435,7 +2346,7 @@ viewAreas:
         -
           type: splitter
           orientation: vertical
-          sizes: [ 198, 690 ]
+          sizes: [ 224, 781 ]
           children:
             -
               type: pane
@@ -2443,7 +2354,7 @@ viewAreas:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 284, 402 ]
+              sizes: [ 322, 455 ]
               children:
                 -
                   type: pane
