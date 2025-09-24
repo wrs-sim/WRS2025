@@ -22,7 +22,7 @@ items:
         use_controller_threads: true
         record_collision_data: false
         controller_options: ""
-        block_scene_view_edit_mode: false
+        block_scene_view_edit_mode: true
         dynamicsMode: "Forward dynamics"
         integrationMode: semi-implicit_euler
         gravity: [ 0, 0, -9.80665 ]
