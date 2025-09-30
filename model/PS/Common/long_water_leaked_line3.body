@@ -1,7 +1,7 @@
 format: ChoreonoidBody
 format_version: 2.0
 angle_unit: degree
-name: LongWaterLeakedLine3
+name: LongWaterLeakedLine
 
 links:
   -
@@ -12,12 +12,12 @@ links:
       - &fountain
         type: FountainDevice
         name: Fountain1
-        #translation: [ -0.03, 0.25, 3.8 ]
-        translation: [ -0.03, 0.25, 0.8 ]
-        rotation: [0,0,1,180]
-      - { <<: *fountain, name: Fountain2, translation: [ -0.03,  0.00, 4.0 ] }
+        translation: [ -0.03, 0.25, 1.5 ]
+        rotation: [ 0,1,0,180 ]
+      - { <<: *fountain, name: Fountain2, translation: [ -0.03,  0.00, 2.5 ] }
       - { <<: *fountain, name: Fountain3, translation: [ -0.03, -0.25, 3.5 ] }
       - { <<: *fountain, name: Fountain4, translation: [ -0.03,  0.00, 4.5 ] }
+      - { <<: *fountain, name: Fountain5, translation: [ -0.1,  0.00, 4.5 ] }
   - &pipe
     type: SubBody
     uri: "pipe/pipe_line_a.body"
@@ -34,6 +34,6 @@ links:
     type: SubBody
     uri: "valve/vertical_valve2_1mpa.body"
     parent: LINE_BASE
-    translation: [ 0, -0.25, 3.5 ]
+    translation: [ 0, -0.25, 0.5 ]
     rotation: [ 0, 0, 1, 90 ]
     joint_type: fixed
