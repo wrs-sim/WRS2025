@@ -7,7 +7,7 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We have uploaded a simplified course that will allow you to perform each task in the future.
 
-## New information（Update: September 3rd, 2025）
+## New information（Update: October 2nd, 2025）
 - The simulation environment consisted of four areas, Area 1 to Area 4, as shown below. The competition was divided into each area.
 <img width="50%" src="./fig/wrs2025-plant.png"> 
 <img width="50%" src="./fig/wrs2025-plant2.png">
@@ -218,6 +218,7 @@ $ ros2 run choreonoid_ros choreonoid
 ## Practice Environment
 Once the above installation is successful, you will be able to set up a practice environment for WRS2025.
 <img width="100%" src="./fig/practice.png">
+<img width="20%" src="./fig/obstacle-robot.png">
 
 #### In the case of Choreonoid Without ROS2
 - 1: Building Choreonoid Without ROS2 for the first time
