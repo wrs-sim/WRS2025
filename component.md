@@ -1,4 +1,4 @@
-### Plant component (Update: September 3rd, 2025)
+### Plant component (Update: October 2nd, 2025)
 ### Ramp
 <img width="33%" src="./fig/ramp.png">
 
@@ -9,6 +9,12 @@
 <img width="33%" src="./fig/catwalk.png">
 
 - The UGV needs to pass through the catwalk (narrow aisle).
+
+### Stick
+<img width="33%" src="./fig/stick.png">
+
+- The UGV needs to pull out the stick.
+
 
 ### Duct
 <img width="33%" src="./fig/duct.png">
