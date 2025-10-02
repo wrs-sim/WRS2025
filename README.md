@@ -23,11 +23,11 @@ The competition at the tournament is set up with the scenario of “Information 
 You use a remote-controlled robot to explore an area where objects are scattered after a plant accident. Since the area is dark, the robot can turn on lights by operating switches to illuminate the area. It will open doors and explore small rooms. To explore the area, the robot must read as many QR codes scattered throughout the area as possible and return to the starting point within the time limit. This area is designed to measure the robot's mobility, operability, and exploration capabilities. Additionally, it is necessary to consider the possibility of limited visibility due to communication issues caused by remote operation, as well as the possibility of sudden power outages.
 
 ##### Considering component
-- Switch, Door, Truss field, QR code, and ･･･
+- Switch, Door, Stick, Truss field, QR code, and ･･･
 
 <img width="25%" src="./fig/switch.png"><img width="25%" src="./fig/switch1.png"><img width="25%" src="./fig/door2.png">
 
-<img width="25%" src="./fig/door3.png"><img width="25%" src="./fig/truss.png"><img width="25%" src="./fig/qr.png">
+<img width="25%" src="./fig/door3.png"><img width="25%" src="./fig/stick.png"><img width="25%" src="./fig/truss.png"><img width="25%" src="./fig/qr.png">
 
 #### Area 2: Firefighting
 <img width="50%" src="./fig/area2.png"> 
