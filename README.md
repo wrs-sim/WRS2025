@@ -7,7 +7,10 @@ The competition at the tournament is set up with the scenario of “Information 
 - We currently have built a simulation environment that takes into account the tasks required for disaster response.
 - We have uploaded a simplified course that will allow you to perform each task in the future.
 
-## New information（Update: October 2nd, 2025）
+## New information（Update: October 5th, 2025）
+- About simulation perfomance
+	- In WRS2025, there are no specific regulations for custom robots other than simulation performance. A simulation is considered real-time when the ratio of computation time to simulation time (output by Choreonoid) is close to 1.0.
+
 - The simulation environment consisted of four areas, Area 1 to Area 4, as shown below. The competition was divided into each area.
 <img width="50%" src="./fig/wrs2025-plant.png"> 
 <img width="50%" src="./fig/wrs2025-plant2.png">
