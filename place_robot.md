@@ -5,7 +5,7 @@ This page explains the procedure for placing your robot models in the practice e
 2. Create a project
 3. Create a YAML file
 4. Start Choreonoid
-
+5. About simulation performance
 
 ### 1. Copy the robot model file
 First, create a directory with any name (e.g., ``model_<team name>``) under ``choreonoid/ext/WRS2025/model``, and copy all your custom robot model files and directories into that directory.
@@ -85,3 +85,7 @@ Enter the following. Be careful about the order of the arguments. For ```<path/t
 
 When you start Choreonoid, if the robot model is misaligned, adjust the initial position coordinates [x, y, z] using start_position. Here, coordinates are specified in meters.
 This completes the loading of the practice environment.
+
+### 5. About simulation performance
+In WRS2025, there are no custom robot regulations except for simulation performance.
+It is desirable that the value, the ratio of real time to simulation time, output by the Choreonoid when the simulation is complete, be as close to 1.0 as possible.
