@@ -191,17 +191,15 @@ $ source ~/.bashrc
 2. Install Choreonoid
 ```bash
 # Clean-Build Choreonoid With ROS2
-$ mkdir -p ~/ros2_ws/src
+$ mkdir -p ~/ws/src
 $ cd ~/ros2_ws/src
 $ git clone https://github.com/choreonoid/choreonoid.git
 $ git clone https://github.com/choreonoid/choreonoid_ros.git
-$ git clone https://github.com/choreonoid/choreonoid_ros2_mobile_robot_tutorial.git
 $ git clone https://github.com/wrs-frei-simulation/WRS-Pre-2024.git choreonoid/ext/WRS2024PRE
 $ git clone https://github.com/wrs-frei-simulation/WRS-2025.git choreonoid/ext/WRS2025
 ```
 - **Move ``hairo-world-plugin`` to ``choreonoid/ext/``.**
 ```bash
-$ git clone https://github.com/k38-suzuki/choreonoid_ros2_sample_drone_tutorial.git
 $ git clone https://github.com/k38-suzuki/choreonoid_joy2.git
 $ choreonoid/misc/script/install-requisites-ubuntu-22.04.sh
 $ sudo ./choreonoid/ext/hairo-world-plugin/misc/script/install-requisites-ubuntu-22.04.sh
@@ -289,6 +287,39 @@ $ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/regist
 5. Introducing your robots to the environment
 	- Introduce your own robot into a environment by referring to the following page
 	- https://github.com/wrs-frei-simulation/WRS-2025/blob/main/place_robot.md
+
+
+## Competition Environment
+Please start Choreonoid with the following command.
+
+#### In the case of Choreonoid Without ROS2
+```bash
+$ cd ~
+$ cd ~/choreonoid/build
+$ ./bin/choreonoid ../ext/WRS2025/registration/registration/registration_20251010.yaml --wrs-util PS-1
+```
+
+#### In the case of Choreonoid With ROS2
+```bash
+$ cd ~
+$ cd ~/ros2_ws
+$ source install/setup.bash
+$ ros2 run choreonoid_ros choreonoid ~/ros2_ws/src/choreonoid/ext/WRS2025/registration/registration_20251010.yaml --wrs-util PS-1
+```
+
+| YAML file | Arguments | Explanation |
+| ---- | ---- | ---- |
+| registration_20251010.yaml | ``PS-1`` | Loading preliminary environment |
+| registration_20251010.yaml | ``PS-2`` | Loading preliminary environment |
+| registration_20251010.yaml | ``PS-3`` | Loading preliminary environment |
+| registration_20251010.yaml | ``PS-4`` | Loading preliminary environment |
+| registration_20251011.yaml | ``PS-1`` | Loading semifinal environment |
+| registration_20251011.yaml | ``PS-2`` | Loading semifinal environment |
+| registration_20251011.yaml | ``PS-3`` | Loading semifinal environment |
+| registration_20251011.yaml | ``PS-4`` | Loading semifinal environment |
+| registration_20251012.yaml | ``PS-12`` | Loading final environment |
+| registration_20251012.yaml | ``PS-34`` | Loading final environment |
+
 
 ## 2024 Pre-tournament
 - 2024 Pre-tournament Official GitHub page: https://github.com/wrs-frei-simulation/WRS-Pre-2024
