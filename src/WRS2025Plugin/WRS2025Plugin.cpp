@@ -20,7 +20,7 @@ public:
 
     virtual bool initialize() override
     {
-        WRSUtilBar::instance()->addFormat({ "WRS2025", 2.0 });
+        WRSUtilBar::instance()->addFormat({ "WRS2025", 25.0 });
         return true;
     }
 
