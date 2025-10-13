@@ -131,7 +131,7 @@ $ cd
 $ git clone https://github.com/choreonoid/choreonoid.git
 $ git clone https://github.com/wrs-frei-simulation/WRS-Pre-2024.git choreonoid/ext/WRS2024PRE
 $ git clone https://github.com/wrs-frei-simulation/WRS-2025.git choreonoid/ext/WRS2025
-$ git clone https://github.com/k38-suzuki/wrs-plugin.git
+$ git clone --recursive https://github.com/wrs-sim/wrs-plugin
 ```
 - **Move ``hairo-world-plugin`` to ``choreonoid/ext/``.**
 ```bash
@@ -150,7 +150,7 @@ $ ./bin/choreonoid
 $ cd ~
 $ git clone https://github.com/wrs-frei-simulation/WRS-Pre-2024.git choreonoid/ext/WRS2024PRE
 $ git clone https://github.com/wrs-frei-simulation/WRS-2025.git choreonoid/ext/WRS2025
-$ git clone https://github.com/k38-suzuki/wrs-plugin.git
+$ git clone --recursive https://github.com/wrs-sim/wrs-plugin
 ```
 - **Move ``hairo-world-plugin`` to ``choreonoid/ext/``.**
 ```bash
@@ -199,7 +199,7 @@ $ git clone https://github.com/choreonoid/choreonoid.git
 $ git clone https://github.com/choreonoid/choreonoid_ros.git
 $ git clone https://github.com/wrs-frei-simulation/WRS-Pre-2024.git choreonoid/ext/WRS2024PRE
 $ git clone https://github.com/wrs-frei-simulation/WRS-2025.git choreonoid/ext/WRS2025
-$ git clone https://github.com/k38-suzuki/wrs-plugin.git
+$ git clone --recursive https://github.com/wrs-sim/wrs-plugin
 ```
 - **Move ``hairo-world-plugin`` to ``choreonoid/ext/``.**
 ```bash
