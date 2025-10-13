@@ -203,7 +203,7 @@ $ git clone --recursive https://github.com/wrs-sim/wrs-plugin.git
 ```
 - **Move ``hairo-world-plugin`` to ``choreonoid/ext/``.**
 ```bash
-$ git clone https://github.com/wrs-sim/choreonoid_joy2joy2
+$ git clone https://github.com/wrs-sim/choreonoid_joy2.git
 $ choreonoid/misc/script/install-requisites-ubuntu-22.04.sh
 $ sudo ./choreonoid/ext/hairo-world-plugin/misc/script/install-requisites-ubuntu-22.04.sh
 $ cd ~/ros2_ws
