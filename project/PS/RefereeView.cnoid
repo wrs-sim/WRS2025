@@ -49,7 +49,7 @@ views:
         -
           camera: [ System, Perspective ]
           is_current: true
-          eye: [ 26.3325, 17.4098, 19.3606 ]
+          eye: [ 17.5768, 11.2426, 12.6907 ]
           direction: [ -0.69397, -0.488806, -0.528653 ]
           up: [ -0.432202, -0.304427, 0.848838 ]
         -
@@ -102,9 +102,9 @@ views:
         -
           camera: [ System, Perspective ]
           is_current: true
-          eye: [ 3, 1.5, 1.2 ]
+          eye: [ 21.5115, 10.7557, 4.9023 ]
           direction: [ -0.880451, -0.440225, -0.17609 ]
-          up: [ -0.1575, -0.0787497, 0.984374 ]
+          up: [ -0.1575, -0.0787496, 0.984374 ]
         -
           camera: [ System, Orthographic ]
           ortho_height: 20
@@ -251,7 +251,7 @@ viewAreas:
             -
               type: splitter
               orientation: vertical
-              sizes: [ 1039, 0 ]
+              sizes: [ 788, 251 ]
               children:
                 -
                   type: splitter
